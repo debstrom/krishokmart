@@ -6,11 +6,11 @@
 
 ## 👥Project Members
 
-| নাম | ID | Batch | Section |
-|-----|-----|-------|---------|
-| Imtiaz Bin Hasan | 04325105101064 | 57 | 3B |
-| Aranya Earnest Nath | 04325105101075 | 57 | 3B |
-| Boishakhi Afroje | 04325105101091 | 57 | 3B |
+| নাম | ID | 
+|-----|-----
+| Mustafizur Rahman | 432320005101040
+|  |
+
 
 ---
 
