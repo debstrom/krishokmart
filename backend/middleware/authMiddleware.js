@@ -2,14 +2,12 @@ const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
 const verifyToken = (req, res, next) => {
-    // Header থেকে token নাও
     const authHeader = req.headers['authorization'];
 
     if (!authHeader) {
         return res.status(401).json({ message: '❌ No token provided!' });
     }
 
-    // "Bearer token" or just "token" দুইটাই handle করো
     const token = authHeader.startsWith('Bearer ') 
         ? authHeader.slice(7) 
         : authHeader;
