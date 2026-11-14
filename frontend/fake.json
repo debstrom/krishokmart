@@ -1,0 +1,4707 @@
+{
+  "_info": "Fake demo data for KrishokMart (all names, emails and numbers are made up). Route keys match backend/routes. Per-user routes are keyed by user id. Fees follow the backend rule: platform_fee = 10%, farmer_amount = 90% of total_price.",
+  "categories": [
+    {
+      "category_id": 1,
+      "category_name": "সবজি"
+    },
+    {
+      "category_id": 2,
+      "category_name": "ফল"
+    },
+    {
+      "category_id": 3,
+      "category_name": "শস্য"
+    },
+    {
+      "category_id": 4,
+      "category_name": "মশলা"
+    },
+    {
+      "category_id": 5,
+      "category_name": "অন্যান্য"
+    }
+  ],
+  "database": {
+    "users": [
+      {
+        "user_id": 1,
+        "name": "অ্যাডমিন",
+        "email": "admin@krishokmart.com",
+        "role": "admin",
+        "status": "approved",
+        "created_at": "2026-10-15T12:00:00.000Z"
+      },
+      {
+        "user_id": 2,
+        "name": "রহিম উদ্দিন",
+        "email": "rahim.uddin@example.com",
+        "role": "farmer",
+        "status": "approved",
+        "created_at": "2026-10-27T12:00:00.000Z"
+      },
+      {
+        "user_id": 3,
+        "name": "করিম মিয়া",
+        "email": "karim.mia@example.com",
+        "role": "farmer",
+        "status": "approved",
+        "created_at": "2026-10-27T12:00:00.000Z"
+      },
+      {
+        "user_id": 4,
+        "name": "সালমা বেগম",
+        "email": "salma.begum@example.com",
+        "role": "farmer",
+        "status": "approved",
+        "created_at": "2026-10-20T12:00:00.000Z"
+      },
+      {
+        "user_id": 5,
+        "name": "জামাল হোসেন",
+        "email": "jamal.hossain@example.com",
+        "role": "farmer",
+        "status": "approved",
+        "created_at": "2026-11-01T12:00:00.000Z"
+      },
+      {
+        "user_id": 6,
+        "name": "নাজমা খাতুন",
+        "email": "nazma.khatun@example.com",
+        "role": "farmer",
+        "status": "approved",
+        "created_at": "2026-10-29T12:00:00.000Z"
+      },
+      {
+        "user_id": 7,
+        "name": "আব্দুল মালেক",
+        "email": "abdul.malek@example.com",
+        "role": "farmer",
+        "status": "approved",
+        "created_at": "2026-10-18T12:00:00.000Z"
+      },
+      {
+        "user_id": 8,
+        "name": "রুবেল আহমেদ",
+        "email": "rubel.ahmed@example.com",
+        "role": "farmer",
+        "status": "pending",
+        "created_at": "2026-11-01T12:00:00.000Z"
+      },
+      {
+        "user_id": 9,
+        "name": "শিউলি আক্তার",
+        "email": "shiuli.akter@example.com",
+        "role": "farmer",
+        "status": "pending",
+        "created_at": "2026-10-17T12:00:00.000Z"
+      },
+      {
+        "user_id": 10,
+        "name": "ফাহিম রহমান",
+        "email": "fahim.rahman@example.com",
+        "role": "buyer",
+        "status": "approved",
+        "created_at": "2026-11-07T12:00:00.000Z"
+      },
+      {
+        "user_id": 11,
+        "name": "তানভীর আহমেদ",
+        "email": "tanvir.ahmed@example.com",
+        "role": "buyer",
+        "status": "approved",
+        "created_at": "2026-10-23T12:00:00.000Z"
+      },
+      {
+        "user_id": 12,
+        "name": "নুসরাত জাহান",
+        "email": "nusrat.jahan@example.com",
+        "role": "buyer",
+        "status": "approved",
+        "created_at": "2026-10-30T12:00:00.000Z"
+      },
+      {
+        "user_id": 13,
+        "name": "মেহেদী হাসান",
+        "email": "mehedi.hasan@example.com",
+        "role": "buyer",
+        "status": "approved",
+        "created_at": "2026-11-05T12:00:00.000Z"
+      },
+      {
+        "user_id": 14,
+        "name": "ইসরাত জাহান",
+        "email": "israt.jahan@example.com",
+        "role": "buyer",
+        "status": "approved",
+        "created_at": "2026-10-20T12:00:00.000Z"
+      },
+      {
+        "user_id": 15,
+        "name": "সাকিব হাসান",
+        "email": "sakib.hasan@example.com",
+        "role": "buyer",
+        "status": "approved",
+        "created_at": "2026-10-30T12:00:00.000Z"
+      },
+      {
+        "user_id": 16,
+        "name": "তাসনিম আক্তার",
+        "email": "tasnim.akter@example.com",
+        "role": "buyer",
+        "status": "approved",
+        "created_at": "2026-10-21T12:00:00.000Z"
+      },
+      {
+        "user_id": 17,
+        "name": "রাফি চৌধুরী",
+        "email": "rafi.chowdhury@example.com",
+        "role": "buyer",
+        "status": "approved",
+        "created_at": "2026-11-06T12:00:00.000Z"
+      },
+      {
+        "user_id": 18,
+        "name": "মীম সুলতানা",
+        "email": "mim.sultana@example.com",
+        "role": "buyer",
+        "status": "approved",
+        "created_at": "2026-10-21T12:00:00.000Z"
+      },
+      {
+        "user_id": 19,
+        "name": "শাওন দাস",
+        "email": "shaon.das@example.com",
+        "role": "buyer",
+        "status": "approved",
+        "created_at": "2026-11-12T12:00:00.000Z"
+      }
+    ],
+    "products": [
+      {
+        "product_id": 5,
+        "farmer_id": 6,
+        "name": "পটল",
+        "price": 55,
+        "quantity": 40,
+        "category_id": 1,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=5",
+        "created_at": "2026-11-13T03:00:00.000Z"
+      },
+      {
+        "product_id": 8,
+        "farmer_id": 3,
+        "name": "কলা (সাগর)",
+        "price": 70,
+        "quantity": 354,
+        "category_id": 2,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=8",
+        "created_at": "2026-11-12T22:00:00.000Z"
+      },
+      {
+        "product_id": 23,
+        "farmer_id": 6,
+        "name": "খাঁটি মধু",
+        "price": 700,
+        "quantity": 322,
+        "category_id": 5,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=23",
+        "created_at": "2026-11-11T11:00:00.000Z"
+      },
+      {
+        "product_id": 15,
+        "farmer_id": 4,
+        "name": "মসুর ডাল",
+        "price": 130,
+        "quantity": 55,
+        "category_id": 3,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=15",
+        "created_at": "2026-11-10T10:00:00.000Z"
+      },
+      {
+        "product_id": 24,
+        "farmer_id": 7,
+        "name": "সরিষার তেল",
+        "price": 260,
+        "quantity": 205,
+        "category_id": 5,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=24",
+        "created_at": "2026-11-10T05:00:00.000Z"
+      },
+      {
+        "product_id": 2,
+        "farmer_id": 3,
+        "name": "আলু",
+        "price": 35,
+        "quantity": 91,
+        "category_id": 1,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=2",
+        "created_at": "2026-11-06T17:00:00.000Z"
+      },
+      {
+        "product_id": 1,
+        "farmer_id": 2,
+        "name": "টমেটো",
+        "price": 60,
+        "quantity": 366,
+        "category_id": 1,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=1",
+        "created_at": "2026-11-06T08:00:00.000Z"
+      },
+      {
+        "product_id": 4,
+        "farmer_id": 5,
+        "name": "ফুলকপি",
+        "price": 45,
+        "quantity": 211,
+        "category_id": 1,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=4",
+        "created_at": "2026-11-05T18:00:00.000Z"
+      },
+      {
+        "product_id": 12,
+        "farmer_id": 7,
+        "name": "পেয়ারা",
+        "price": 80,
+        "quantity": 53,
+        "category_id": 2,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=12",
+        "created_at": "2026-11-05T06:00:00.000Z"
+      },
+      {
+        "product_id": 10,
+        "farmer_id": 5,
+        "name": "লিচু",
+        "price": 200,
+        "quantity": 185,
+        "category_id": 2,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=10",
+        "created_at": "2026-11-02T23:00:00.000Z"
+      },
+      {
+        "product_id": 13,
+        "farmer_id": 2,
+        "name": "চাল (মিনিকেট)",
+        "price": 70,
+        "quantity": 344,
+        "category_id": 3,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=13",
+        "created_at": "2026-10-31T23:00:00.000Z"
+      },
+      {
+        "product_id": 21,
+        "farmer_id": 4,
+        "name": "রসুন",
+        "price": 180,
+        "quantity": 78,
+        "category_id": 4,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=21",
+        "created_at": "2026-10-31T11:00:00.000Z"
+      },
+      {
+        "product_id": 18,
+        "farmer_id": 7,
+        "name": "হলুদ",
+        "price": 250,
+        "quantity": 49,
+        "category_id": 4,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=18",
+        "created_at": "2026-10-31T06:00:00.000Z"
+      },
+      {
+        "product_id": 7,
+        "farmer_id": 2,
+        "name": "আম (ল্যাংড়া)",
+        "price": 120,
+        "quantity": 88,
+        "category_id": 2,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=7",
+        "created_at": "2026-10-28T11:00:00.000Z"
+      },
+      {
+        "product_id": 14,
+        "farmer_id": 3,
+        "name": "গম",
+        "price": 55,
+        "quantity": 335,
+        "category_id": 3,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=14",
+        "created_at": "2026-10-28T08:00:00.000Z"
+      },
+      {
+        "product_id": 20,
+        "farmer_id": 3,
+        "name": "আদা",
+        "price": 220,
+        "quantity": 462,
+        "category_id": 4,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=20",
+        "created_at": "2026-10-27T02:00:00.000Z"
+      },
+      {
+        "product_id": 6,
+        "farmer_id": 7,
+        "name": "লাউ",
+        "price": 40,
+        "quantity": 457,
+        "category_id": 1,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=6",
+        "created_at": "2026-10-26T19:00:00.000Z"
+      },
+      {
+        "product_id": 16,
+        "farmer_id": 5,
+        "name": "ভুট্টা",
+        "price": 40,
+        "quantity": 89,
+        "category_id": 3,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=16",
+        "created_at": "2026-10-26T19:00:00.000Z"
+      },
+      {
+        "product_id": 19,
+        "farmer_id": 2,
+        "name": "শুকনা মরিচ",
+        "price": 300,
+        "quantity": 214,
+        "category_id": 4,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=19",
+        "created_at": "2026-10-25T10:00:00.000Z"
+      },
+      {
+        "product_id": 9,
+        "farmer_id": 4,
+        "name": "পেঁপে",
+        "price": 45,
+        "quantity": 332,
+        "category_id": 2,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=9",
+        "created_at": "2026-10-22T19:00:00.000Z"
+      },
+      {
+        "product_id": 11,
+        "farmer_id": 6,
+        "name": "আনারস",
+        "price": 60,
+        "quantity": 246,
+        "category_id": 2,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=11",
+        "created_at": "2026-10-22T06:00:00.000Z"
+      },
+      {
+        "product_id": 22,
+        "farmer_id": 5,
+        "name": "খেজুরের গুড়",
+        "price": 320,
+        "quantity": 240,
+        "category_id": 5,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=22",
+        "created_at": "2026-10-21T22:00:00.000Z"
+      },
+      {
+        "product_id": 17,
+        "farmer_id": 6,
+        "name": "সরিষা",
+        "price": 150,
+        "quantity": 390,
+        "category_id": 3,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=17",
+        "created_at": "2026-10-20T11:00:00.000Z"
+      },
+      {
+        "product_id": 3,
+        "farmer_id": 4,
+        "name": "বেগুন",
+        "price": 50,
+        "quantity": 272,
+        "category_id": 1,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=3",
+        "created_at": "2026-10-20T00:00:00.000Z"
+      }
+    ],
+    "orders": [
+      {
+        "order_id": 11,
+        "buyer_id": 10,
+        "product_id": 3,
+        "quantity": 5,
+        "total_price": 250,
+        "platform_fee": 25.0,
+        "farmer_amount": 225.0,
+        "status": "cancelled",
+        "order_date": "2026-11-14T07:35:00.000Z"
+      },
+      {
+        "order_id": 6,
+        "buyer_id": 10,
+        "product_id": 2,
+        "quantity": 4,
+        "total_price": 140,
+        "platform_fee": 14.0,
+        "farmer_amount": 126.0,
+        "status": "pending",
+        "order_date": "2026-11-13T14:02:00.000Z"
+      },
+      {
+        "order_id": 20,
+        "buyer_id": 16,
+        "product_id": 20,
+        "quantity": 2,
+        "total_price": 440,
+        "platform_fee": 44.0,
+        "farmer_amount": 396.0,
+        "status": "confirmed",
+        "order_date": "2026-11-13T10:22:00.000Z"
+      },
+      {
+        "order_id": 32,
+        "buyer_id": 13,
+        "product_id": 9,
+        "quantity": 8,
+        "total_price": 360,
+        "platform_fee": 36.0,
+        "farmer_amount": 324.0,
+        "status": "confirmed",
+        "order_date": "2026-11-13T08:43:00.000Z"
+      },
+      {
+        "order_id": 17,
+        "buyer_id": 13,
+        "product_id": 3,
+        "quantity": 7,
+        "total_price": 350,
+        "platform_fee": 35.0,
+        "farmer_amount": 315.0,
+        "status": "confirmed",
+        "order_date": "2026-11-12T19:00:00.000Z"
+      },
+      {
+        "order_id": 29,
+        "buyer_id": 17,
+        "product_id": 19,
+        "quantity": 12,
+        "total_price": 3600,
+        "platform_fee": 360.0,
+        "farmer_amount": 3240.0,
+        "status": "cancelled",
+        "order_date": "2026-11-12T17:11:00.000Z"
+      },
+      {
+        "order_id": 31,
+        "buyer_id": 12,
+        "product_id": 14,
+        "quantity": 15,
+        "total_price": 825,
+        "platform_fee": 82.5,
+        "farmer_amount": 742.5,
+        "status": "confirmed",
+        "order_date": "2026-11-12T03:56:00.000Z"
+      },
+      {
+        "order_id": 13,
+        "buyer_id": 18,
+        "product_id": 1,
+        "quantity": 16,
+        "total_price": 960,
+        "platform_fee": 96.0,
+        "farmer_amount": 864.0,
+        "status": "pending",
+        "order_date": "2026-11-11T08:59:00.000Z"
+      },
+      {
+        "order_id": 8,
+        "buyer_id": 10,
+        "product_id": 11,
+        "quantity": 18,
+        "total_price": 1080,
+        "platform_fee": 108.0,
+        "farmer_amount": 972.0,
+        "status": "confirmed",
+        "order_date": "2026-11-11T08:47:00.000Z"
+      },
+      {
+        "order_id": 16,
+        "buyer_id": 18,
+        "product_id": 8,
+        "quantity": 2,
+        "total_price": 140,
+        "platform_fee": 14.0,
+        "farmer_amount": 126.0,
+        "status": "confirmed",
+        "order_date": "2026-11-10T22:13:00.000Z"
+      },
+      {
+        "order_id": 25,
+        "buyer_id": 15,
+        "product_id": 18,
+        "quantity": 3,
+        "total_price": 750,
+        "platform_fee": 75.0,
+        "farmer_amount": 675.0,
+        "status": "confirmed",
+        "order_date": "2026-11-10T20:35:00.000Z"
+      },
+      {
+        "order_id": 5,
+        "buyer_id": 16,
+        "product_id": 5,
+        "quantity": 14,
+        "total_price": 770,
+        "platform_fee": 77.0,
+        "farmer_amount": 693.0,
+        "status": "pending",
+        "order_date": "2026-11-09T09:42:00.000Z"
+      },
+      {
+        "order_id": 15,
+        "buyer_id": 18,
+        "product_id": 8,
+        "quantity": 20,
+        "total_price": 1400,
+        "platform_fee": 140.0,
+        "farmer_amount": 1260.0,
+        "status": "cancelled",
+        "order_date": "2026-11-09T06:27:00.000Z"
+      },
+      {
+        "order_id": 33,
+        "buyer_id": 11,
+        "product_id": 22,
+        "quantity": 8,
+        "total_price": 2560,
+        "platform_fee": 256.0,
+        "farmer_amount": 2304.0,
+        "status": "confirmed",
+        "order_date": "2026-11-09T00:24:00.000Z"
+      },
+      {
+        "order_id": 21,
+        "buyer_id": 13,
+        "product_id": 10,
+        "quantity": 6,
+        "total_price": 1200,
+        "platform_fee": 120.0,
+        "farmer_amount": 1080.0,
+        "status": "confirmed",
+        "order_date": "2026-11-06T17:44:00.000Z"
+      },
+      {
+        "order_id": 28,
+        "buyer_id": 18,
+        "product_id": 24,
+        "quantity": 4,
+        "total_price": 1040,
+        "platform_fee": 104.0,
+        "farmer_amount": 936.0,
+        "status": "confirmed",
+        "order_date": "2026-11-06T12:18:00.000Z"
+      },
+      {
+        "order_id": 30,
+        "buyer_id": 17,
+        "product_id": 9,
+        "quantity": 15,
+        "total_price": 675,
+        "platform_fee": 67.5,
+        "farmer_amount": 607.5,
+        "status": "pending",
+        "order_date": "2026-11-05T04:16:00.000Z"
+      },
+      {
+        "order_id": 19,
+        "buyer_id": 14,
+        "product_id": 20,
+        "quantity": 11,
+        "total_price": 2420,
+        "platform_fee": 242.0,
+        "farmer_amount": 2178.0,
+        "status": "cancelled",
+        "order_date": "2026-11-04T17:07:00.000Z"
+      },
+      {
+        "order_id": 12,
+        "buyer_id": 14,
+        "product_id": 4,
+        "quantity": 11,
+        "total_price": 495,
+        "platform_fee": 49.5,
+        "farmer_amount": 445.5,
+        "status": "pending",
+        "order_date": "2026-11-03T22:30:00.000Z"
+      },
+      {
+        "order_id": 1,
+        "buyer_id": 14,
+        "product_id": 23,
+        "quantity": 5,
+        "total_price": 3500,
+        "platform_fee": 350.0,
+        "farmer_amount": 3150.0,
+        "status": "confirmed",
+        "order_date": "2026-11-02T16:11:00.000Z"
+      },
+      {
+        "order_id": 27,
+        "buyer_id": 15,
+        "product_id": 15,
+        "quantity": 16,
+        "total_price": 2080,
+        "platform_fee": 208.0,
+        "farmer_amount": 1872.0,
+        "status": "confirmed",
+        "order_date": "2026-10-31T04:43:00.000Z"
+      },
+      {
+        "order_id": 18,
+        "buyer_id": 18,
+        "product_id": 10,
+        "quantity": 9,
+        "total_price": 1800,
+        "platform_fee": 180.0,
+        "farmer_amount": 1620.0,
+        "status": "confirmed",
+        "order_date": "2026-10-30T17:14:00.000Z"
+      },
+      {
+        "order_id": 7,
+        "buyer_id": 14,
+        "product_id": 7,
+        "quantity": 18,
+        "total_price": 2160,
+        "platform_fee": 216.0,
+        "farmer_amount": 1944.0,
+        "status": "pending",
+        "order_date": "2026-10-30T01:19:00.000Z"
+      },
+      {
+        "order_id": 3,
+        "buyer_id": 10,
+        "product_id": 8,
+        "quantity": 2,
+        "total_price": 140,
+        "platform_fee": 14.0,
+        "farmer_amount": 126.0,
+        "status": "pending",
+        "order_date": "2026-10-29T08:21:00.000Z"
+      },
+      {
+        "order_id": 23,
+        "buyer_id": 10,
+        "product_id": 1,
+        "quantity": 15,
+        "total_price": 900,
+        "platform_fee": 90.0,
+        "farmer_amount": 810.0,
+        "status": "confirmed",
+        "order_date": "2026-10-29T08:07:00.000Z"
+      },
+      {
+        "order_id": 34,
+        "buyer_id": 16,
+        "product_id": 7,
+        "quantity": 15,
+        "total_price": 1800,
+        "platform_fee": 180.0,
+        "farmer_amount": 1620.0,
+        "status": "cancelled",
+        "order_date": "2026-10-29T05:43:00.000Z"
+      },
+      {
+        "order_id": 10,
+        "buyer_id": 11,
+        "product_id": 18,
+        "quantity": 20,
+        "total_price": 5000,
+        "platform_fee": 500.0,
+        "farmer_amount": 4500.0,
+        "status": "confirmed",
+        "order_date": "2026-10-28T15:56:00.000Z"
+      },
+      {
+        "order_id": 14,
+        "buyer_id": 12,
+        "product_id": 1,
+        "quantity": 7,
+        "total_price": 420,
+        "platform_fee": 42.0,
+        "farmer_amount": 378.0,
+        "status": "confirmed",
+        "order_date": "2026-10-27T12:52:00.000Z"
+      },
+      {
+        "order_id": 24,
+        "buyer_id": 19,
+        "product_id": 5,
+        "quantity": 2,
+        "total_price": 110,
+        "platform_fee": 11.0,
+        "farmer_amount": 99.0,
+        "status": "confirmed",
+        "order_date": "2026-10-27T09:52:00.000Z"
+      },
+      {
+        "order_id": 4,
+        "buyer_id": 12,
+        "product_id": 17,
+        "quantity": 16,
+        "total_price": 2400,
+        "platform_fee": 240.0,
+        "farmer_amount": 2160.0,
+        "status": "pending",
+        "order_date": "2026-10-26T10:16:00.000Z"
+      },
+      {
+        "order_id": 26,
+        "buyer_id": 14,
+        "product_id": 20,
+        "quantity": 7,
+        "total_price": 1540,
+        "platform_fee": 154.0,
+        "farmer_amount": 1386.0,
+        "status": "confirmed",
+        "order_date": "2026-10-26T03:12:00.000Z"
+      },
+      {
+        "order_id": 2,
+        "buyer_id": 17,
+        "product_id": 22,
+        "quantity": 14,
+        "total_price": 4480,
+        "platform_fee": 448.0,
+        "farmer_amount": 4032.0,
+        "status": "confirmed",
+        "order_date": "2026-10-25T23:15:00.000Z"
+      },
+      {
+        "order_id": 9,
+        "buyer_id": 12,
+        "product_id": 14,
+        "quantity": 8,
+        "total_price": 440,
+        "platform_fee": 44.0,
+        "farmer_amount": 396.0,
+        "status": "confirmed",
+        "order_date": "2026-10-25T19:36:00.000Z"
+      },
+      {
+        "order_id": 22,
+        "buyer_id": 10,
+        "product_id": 6,
+        "quantity": 14,
+        "total_price": 560,
+        "platform_fee": 56.0,
+        "farmer_amount": 504.0,
+        "status": "confirmed",
+        "order_date": "2026-10-25T13:40:00.000Z"
+      }
+    ]
+  },
+  "routes": {
+    "POST /api/auth/signup": {
+      "success": {
+        "status": 201,
+        "body": {
+          "message": "✅ Signup successful!",
+          "userId": 20
+        }
+      },
+      "errors": [
+        {
+          "status": 400,
+          "body": {
+            "message": "❌ Email already exists!"
+          }
+        },
+        {
+          "status": 500,
+          "body": {
+            "message": "Server error"
+          }
+        }
+      ]
+    },
+    "POST /api/auth/login": {
+      "successByUserId": {
+        "1": {
+          "message": "✅ Login successful!",
+          "token": "mock-jwt-token-user-1",
+          "user": {
+            "id": 1,
+            "name": "অ্যাডমিন",
+            "email": "admin@krishokmart.com",
+            "role": "admin"
+          }
+        },
+        "2": {
+          "message": "✅ Login successful!",
+          "token": "mock-jwt-token-user-2",
+          "user": {
+            "id": 2,
+            "name": "রহিম উদ্দিন",
+            "email": "rahim.uddin@example.com",
+            "role": "farmer"
+          }
+        },
+        "3": {
+          "message": "✅ Login successful!",
+          "token": "mock-jwt-token-user-3",
+          "user": {
+            "id": 3,
+            "name": "করিম মিয়া",
+            "email": "karim.mia@example.com",
+            "role": "farmer"
+          }
+        },
+        "4": {
+          "message": "✅ Login successful!",
+          "token": "mock-jwt-token-user-4",
+          "user": {
+            "id": 4,
+            "name": "সালমা বেগম",
+            "email": "salma.begum@example.com",
+            "role": "farmer"
+          }
+        },
+        "5": {
+          "message": "✅ Login successful!",
+          "token": "mock-jwt-token-user-5",
+          "user": {
+            "id": 5,
+            "name": "জামাল হোসেন",
+            "email": "jamal.hossain@example.com",
+            "role": "farmer"
+          }
+        },
+        "6": {
+          "message": "✅ Login successful!",
+          "token": "mock-jwt-token-user-6",
+          "user": {
+            "id": 6,
+            "name": "নাজমা খাতুন",
+            "email": "nazma.khatun@example.com",
+            "role": "farmer"
+          }
+        },
+        "7": {
+          "message": "✅ Login successful!",
+          "token": "mock-jwt-token-user-7",
+          "user": {
+            "id": 7,
+            "name": "আব্দুল মালেক",
+            "email": "abdul.malek@example.com",
+            "role": "farmer"
+          }
+        },
+        "10": {
+          "message": "✅ Login successful!",
+          "token": "mock-jwt-token-user-10",
+          "user": {
+            "id": 10,
+            "name": "ফাহিম রহমান",
+            "email": "fahim.rahman@example.com",
+            "role": "buyer"
+          }
+        },
+        "11": {
+          "message": "✅ Login successful!",
+          "token": "mock-jwt-token-user-11",
+          "user": {
+            "id": 11,
+            "name": "তানভীর আহমেদ",
+            "email": "tanvir.ahmed@example.com",
+            "role": "buyer"
+          }
+        },
+        "12": {
+          "message": "✅ Login successful!",
+          "token": "mock-jwt-token-user-12",
+          "user": {
+            "id": 12,
+            "name": "নুসরাত জাহান",
+            "email": "nusrat.jahan@example.com",
+            "role": "buyer"
+          }
+        },
+        "13": {
+          "message": "✅ Login successful!",
+          "token": "mock-jwt-token-user-13",
+          "user": {
+            "id": 13,
+            "name": "মেহেদী হাসান",
+            "email": "mehedi.hasan@example.com",
+            "role": "buyer"
+          }
+        },
+        "14": {
+          "message": "✅ Login successful!",
+          "token": "mock-jwt-token-user-14",
+          "user": {
+            "id": 14,
+            "name": "ইসরাত জাহান",
+            "email": "israt.jahan@example.com",
+            "role": "buyer"
+          }
+        },
+        "15": {
+          "message": "✅ Login successful!",
+          "token": "mock-jwt-token-user-15",
+          "user": {
+            "id": 15,
+            "name": "সাকিব হাসান",
+            "email": "sakib.hasan@example.com",
+            "role": "buyer"
+          }
+        },
+        "16": {
+          "message": "✅ Login successful!",
+          "token": "mock-jwt-token-user-16",
+          "user": {
+            "id": 16,
+            "name": "তাসনিম আক্তার",
+            "email": "tasnim.akter@example.com",
+            "role": "buyer"
+          }
+        },
+        "17": {
+          "message": "✅ Login successful!",
+          "token": "mock-jwt-token-user-17",
+          "user": {
+            "id": 17,
+            "name": "রাফি চৌধুরী",
+            "email": "rafi.chowdhury@example.com",
+            "role": "buyer"
+          }
+        },
+        "18": {
+          "message": "✅ Login successful!",
+          "token": "mock-jwt-token-user-18",
+          "user": {
+            "id": 18,
+            "name": "মীম সুলতানা",
+            "email": "mim.sultana@example.com",
+            "role": "buyer"
+          }
+        },
+        "19": {
+          "message": "✅ Login successful!",
+          "token": "mock-jwt-token-user-19",
+          "user": {
+            "id": 19,
+            "name": "শাওন দাস",
+            "email": "shaon.das@example.com",
+            "role": "buyer"
+          }
+        }
+      },
+      "errors": [
+        {
+          "status": 400,
+          "body": {
+            "message": "❌ User not found!"
+          }
+        },
+        {
+          "status": 400,
+          "body": {
+            "message": "❌ Wrong password!"
+          }
+        },
+        {
+          "status": 403,
+          "body": {
+            "message": "⏳ Wait for admin approval!"
+          }
+        }
+      ]
+    },
+    "GET /api/products": [
+      {
+        "product_id": 5,
+        "name": "পটল",
+        "price": 55,
+        "quantity": 40,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=5",
+        "farmer_name": "নাজমা খাতুন",
+        "category_name": "সবজি"
+      },
+      {
+        "product_id": 8,
+        "name": "কলা (সাগর)",
+        "price": 70,
+        "quantity": 354,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=8",
+        "farmer_name": "করিম মিয়া",
+        "category_name": "ফল"
+      },
+      {
+        "product_id": 23,
+        "name": "খাঁটি মধু",
+        "price": 700,
+        "quantity": 322,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=23",
+        "farmer_name": "নাজমা খাতুন",
+        "category_name": "অন্যান্য"
+      },
+      {
+        "product_id": 15,
+        "name": "মসুর ডাল",
+        "price": 130,
+        "quantity": 55,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=15",
+        "farmer_name": "সালমা বেগম",
+        "category_name": "শস্য"
+      },
+      {
+        "product_id": 24,
+        "name": "সরিষার তেল",
+        "price": 260,
+        "quantity": 205,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=24",
+        "farmer_name": "আব্দুল মালেক",
+        "category_name": "অন্যান্য"
+      },
+      {
+        "product_id": 2,
+        "name": "আলু",
+        "price": 35,
+        "quantity": 91,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=2",
+        "farmer_name": "করিম মিয়া",
+        "category_name": "সবজি"
+      },
+      {
+        "product_id": 1,
+        "name": "টমেটো",
+        "price": 60,
+        "quantity": 366,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=1",
+        "farmer_name": "রহিম উদ্দিন",
+        "category_name": "সবজি"
+      },
+      {
+        "product_id": 4,
+        "name": "ফুলকপি",
+        "price": 45,
+        "quantity": 211,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=4",
+        "farmer_name": "জামাল হোসেন",
+        "category_name": "সবজি"
+      },
+      {
+        "product_id": 12,
+        "name": "পেয়ারা",
+        "price": 80,
+        "quantity": 53,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=12",
+        "farmer_name": "আব্দুল মালেক",
+        "category_name": "ফল"
+      },
+      {
+        "product_id": 10,
+        "name": "লিচু",
+        "price": 200,
+        "quantity": 185,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=10",
+        "farmer_name": "জামাল হোসেন",
+        "category_name": "ফল"
+      },
+      {
+        "product_id": 13,
+        "name": "চাল (মিনিকেট)",
+        "price": 70,
+        "quantity": 344,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=13",
+        "farmer_name": "রহিম উদ্দিন",
+        "category_name": "শস্য"
+      },
+      {
+        "product_id": 21,
+        "name": "রসুন",
+        "price": 180,
+        "quantity": 78,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=21",
+        "farmer_name": "সালমা বেগম",
+        "category_name": "মশলা"
+      },
+      {
+        "product_id": 18,
+        "name": "হলুদ",
+        "price": 250,
+        "quantity": 49,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=18",
+        "farmer_name": "আব্দুল মালেক",
+        "category_name": "মশলা"
+      },
+      {
+        "product_id": 7,
+        "name": "আম (ল্যাংড়া)",
+        "price": 120,
+        "quantity": 88,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=7",
+        "farmer_name": "রহিম উদ্দিন",
+        "category_name": "ফল"
+      },
+      {
+        "product_id": 14,
+        "name": "গম",
+        "price": 55,
+        "quantity": 335,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=14",
+        "farmer_name": "করিম মিয়া",
+        "category_name": "শস্য"
+      },
+      {
+        "product_id": 20,
+        "name": "আদা",
+        "price": 220,
+        "quantity": 462,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=20",
+        "farmer_name": "করিম মিয়া",
+        "category_name": "মশলা"
+      },
+      {
+        "product_id": 6,
+        "name": "লাউ",
+        "price": 40,
+        "quantity": 457,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=6",
+        "farmer_name": "আব্দুল মালেক",
+        "category_name": "সবজি"
+      },
+      {
+        "product_id": 16,
+        "name": "ভুট্টা",
+        "price": 40,
+        "quantity": 89,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=16",
+        "farmer_name": "জামাল হোসেন",
+        "category_name": "শস্য"
+      },
+      {
+        "product_id": 19,
+        "name": "শুকনা মরিচ",
+        "price": 300,
+        "quantity": 214,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=19",
+        "farmer_name": "রহিম উদ্দিন",
+        "category_name": "মশলা"
+      },
+      {
+        "product_id": 9,
+        "name": "পেঁপে",
+        "price": 45,
+        "quantity": 332,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=9",
+        "farmer_name": "সালমা বেগম",
+        "category_name": "ফল"
+      },
+      {
+        "product_id": 11,
+        "name": "আনারস",
+        "price": 60,
+        "quantity": 246,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=11",
+        "farmer_name": "নাজমা খাতুন",
+        "category_name": "ফল"
+      },
+      {
+        "product_id": 22,
+        "name": "খেজুরের গুড়",
+        "price": 320,
+        "quantity": 240,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=22",
+        "farmer_name": "জামাল হোসেন",
+        "category_name": "অন্যান্য"
+      },
+      {
+        "product_id": 17,
+        "name": "সরিষা",
+        "price": 150,
+        "quantity": 390,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=17",
+        "farmer_name": "নাজমা খাতুন",
+        "category_name": "শস্য"
+      },
+      {
+        "product_id": 3,
+        "name": "বেগুন",
+        "price": 50,
+        "quantity": 272,
+        "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=3",
+        "farmer_name": "সালমা বেগম",
+        "category_name": "সবজি"
+      }
+    ],
+    "GET /api/products/search": {
+      "default": [
+        {
+          "product_id": 5,
+          "name": "পটল",
+          "price": 55,
+          "quantity": 40,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=5",
+          "farmer_name": "নাজমা খাতুন",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 8,
+          "name": "কলা (সাগর)",
+          "price": 70,
+          "quantity": 354,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=8",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 23,
+          "name": "খাঁটি মধু",
+          "price": 700,
+          "quantity": 322,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=23",
+          "farmer_name": "নাজমা খাতুন",
+          "category_name": "অন্যান্য"
+        },
+        {
+          "product_id": 15,
+          "name": "মসুর ডাল",
+          "price": 130,
+          "quantity": 55,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=15",
+          "farmer_name": "সালমা বেগম",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 24,
+          "name": "সরিষার তেল",
+          "price": 260,
+          "quantity": 205,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=24",
+          "farmer_name": "আব্দুল মালেক",
+          "category_name": "অন্যান্য"
+        },
+        {
+          "product_id": 2,
+          "name": "আলু",
+          "price": 35,
+          "quantity": 91,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=2",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 1,
+          "name": "টমেটো",
+          "price": 60,
+          "quantity": 366,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=1",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 4,
+          "name": "ফুলকপি",
+          "price": 45,
+          "quantity": 211,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=4",
+          "farmer_name": "জামাল হোসেন",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 12,
+          "name": "পেয়ারা",
+          "price": 80,
+          "quantity": 53,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=12",
+          "farmer_name": "আব্দুল মালেক",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 10,
+          "name": "লিচু",
+          "price": 200,
+          "quantity": 185,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=10",
+          "farmer_name": "জামাল হোসেন",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 13,
+          "name": "চাল (মিনিকেট)",
+          "price": 70,
+          "quantity": 344,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=13",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 21,
+          "name": "রসুন",
+          "price": 180,
+          "quantity": 78,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=21",
+          "farmer_name": "সালমা বেগম",
+          "category_name": "মশলা"
+        },
+        {
+          "product_id": 18,
+          "name": "হলুদ",
+          "price": 250,
+          "quantity": 49,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=18",
+          "farmer_name": "আব্দুল মালেক",
+          "category_name": "মশলা"
+        },
+        {
+          "product_id": 7,
+          "name": "আম (ল্যাংড়া)",
+          "price": 120,
+          "quantity": 88,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=7",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 14,
+          "name": "গম",
+          "price": 55,
+          "quantity": 335,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=14",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 20,
+          "name": "আদা",
+          "price": 220,
+          "quantity": 462,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=20",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "মশলা"
+        },
+        {
+          "product_id": 6,
+          "name": "লাউ",
+          "price": 40,
+          "quantity": 457,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=6",
+          "farmer_name": "আব্দুল মালেক",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 16,
+          "name": "ভুট্টা",
+          "price": 40,
+          "quantity": 89,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=16",
+          "farmer_name": "জামাল হোসেন",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 19,
+          "name": "শুকনা মরিচ",
+          "price": 300,
+          "quantity": 214,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=19",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "মশলা"
+        },
+        {
+          "product_id": 9,
+          "name": "পেঁপে",
+          "price": 45,
+          "quantity": 332,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=9",
+          "farmer_name": "সালমা বেগম",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 11,
+          "name": "আনারস",
+          "price": 60,
+          "quantity": 246,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=11",
+          "farmer_name": "নাজমা খাতুন",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 22,
+          "name": "খেজুরের গুড়",
+          "price": 320,
+          "quantity": 240,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=22",
+          "farmer_name": "জামাল হোসেন",
+          "category_name": "অন্যান্য"
+        },
+        {
+          "product_id": 17,
+          "name": "সরিষা",
+          "price": 150,
+          "quantity": 390,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=17",
+          "farmer_name": "নাজমা খাতুন",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 3,
+          "name": "বেগুন",
+          "price": 50,
+          "quantity": 272,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=3",
+          "farmer_name": "সালমা বেগম",
+          "category_name": "সবজি"
+        }
+      ],
+      "?sort=low": [
+        {
+          "product_id": 2,
+          "name": "আলু",
+          "price": 35,
+          "quantity": 91,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=2",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 6,
+          "name": "লাউ",
+          "price": 40,
+          "quantity": 457,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=6",
+          "farmer_name": "আব্দুল মালেক",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 16,
+          "name": "ভুট্টা",
+          "price": 40,
+          "quantity": 89,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=16",
+          "farmer_name": "জামাল হোসেন",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 4,
+          "name": "ফুলকপি",
+          "price": 45,
+          "quantity": 211,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=4",
+          "farmer_name": "জামাল হোসেন",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 9,
+          "name": "পেঁপে",
+          "price": 45,
+          "quantity": 332,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=9",
+          "farmer_name": "সালমা বেগম",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 3,
+          "name": "বেগুন",
+          "price": 50,
+          "quantity": 272,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=3",
+          "farmer_name": "সালমা বেগম",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 5,
+          "name": "পটল",
+          "price": 55,
+          "quantity": 40,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=5",
+          "farmer_name": "নাজমা খাতুন",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 14,
+          "name": "গম",
+          "price": 55,
+          "quantity": 335,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=14",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 1,
+          "name": "টমেটো",
+          "price": 60,
+          "quantity": 366,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=1",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 11,
+          "name": "আনারস",
+          "price": 60,
+          "quantity": 246,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=11",
+          "farmer_name": "নাজমা খাতুন",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 8,
+          "name": "কলা (সাগর)",
+          "price": 70,
+          "quantity": 354,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=8",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 13,
+          "name": "চাল (মিনিকেট)",
+          "price": 70,
+          "quantity": 344,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=13",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 12,
+          "name": "পেয়ারা",
+          "price": 80,
+          "quantity": 53,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=12",
+          "farmer_name": "আব্দুল মালেক",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 7,
+          "name": "আম (ল্যাংড়া)",
+          "price": 120,
+          "quantity": 88,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=7",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 15,
+          "name": "মসুর ডাল",
+          "price": 130,
+          "quantity": 55,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=15",
+          "farmer_name": "সালমা বেগম",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 17,
+          "name": "সরিষা",
+          "price": 150,
+          "quantity": 390,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=17",
+          "farmer_name": "নাজমা খাতুন",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 21,
+          "name": "রসুন",
+          "price": 180,
+          "quantity": 78,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=21",
+          "farmer_name": "সালমা বেগম",
+          "category_name": "মশলা"
+        },
+        {
+          "product_id": 10,
+          "name": "লিচু",
+          "price": 200,
+          "quantity": 185,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=10",
+          "farmer_name": "জামাল হোসেন",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 20,
+          "name": "আদা",
+          "price": 220,
+          "quantity": 462,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=20",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "মশলা"
+        },
+        {
+          "product_id": 18,
+          "name": "হলুদ",
+          "price": 250,
+          "quantity": 49,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=18",
+          "farmer_name": "আব্দুল মালেক",
+          "category_name": "মশলা"
+        },
+        {
+          "product_id": 24,
+          "name": "সরিষার তেল",
+          "price": 260,
+          "quantity": 205,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=24",
+          "farmer_name": "আব্দুল মালেক",
+          "category_name": "অন্যান্য"
+        },
+        {
+          "product_id": 19,
+          "name": "শুকনা মরিচ",
+          "price": 300,
+          "quantity": 214,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=19",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "মশলা"
+        },
+        {
+          "product_id": 22,
+          "name": "খেজুরের গুড়",
+          "price": 320,
+          "quantity": 240,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=22",
+          "farmer_name": "জামাল হোসেন",
+          "category_name": "অন্যান্য"
+        },
+        {
+          "product_id": 23,
+          "name": "খাঁটি মধু",
+          "price": 700,
+          "quantity": 322,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=23",
+          "farmer_name": "নাজমা খাতুন",
+          "category_name": "অন্যান্য"
+        }
+      ],
+      "?sort=high": [
+        {
+          "product_id": 23,
+          "name": "খাঁটি মধু",
+          "price": 700,
+          "quantity": 322,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=23",
+          "farmer_name": "নাজমা খাতুন",
+          "category_name": "অন্যান্য"
+        },
+        {
+          "product_id": 22,
+          "name": "খেজুরের গুড়",
+          "price": 320,
+          "quantity": 240,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=22",
+          "farmer_name": "জামাল হোসেন",
+          "category_name": "অন্যান্য"
+        },
+        {
+          "product_id": 19,
+          "name": "শুকনা মরিচ",
+          "price": 300,
+          "quantity": 214,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=19",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "মশলা"
+        },
+        {
+          "product_id": 24,
+          "name": "সরিষার তেল",
+          "price": 260,
+          "quantity": 205,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=24",
+          "farmer_name": "আব্দুল মালেক",
+          "category_name": "অন্যান্য"
+        },
+        {
+          "product_id": 18,
+          "name": "হলুদ",
+          "price": 250,
+          "quantity": 49,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=18",
+          "farmer_name": "আব্দুল মালেক",
+          "category_name": "মশলা"
+        },
+        {
+          "product_id": 20,
+          "name": "আদা",
+          "price": 220,
+          "quantity": 462,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=20",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "মশলা"
+        },
+        {
+          "product_id": 10,
+          "name": "লিচু",
+          "price": 200,
+          "quantity": 185,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=10",
+          "farmer_name": "জামাল হোসেন",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 21,
+          "name": "রসুন",
+          "price": 180,
+          "quantity": 78,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=21",
+          "farmer_name": "সালমা বেগম",
+          "category_name": "মশলা"
+        },
+        {
+          "product_id": 17,
+          "name": "সরিষা",
+          "price": 150,
+          "quantity": 390,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=17",
+          "farmer_name": "নাজমা খাতুন",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 15,
+          "name": "মসুর ডাল",
+          "price": 130,
+          "quantity": 55,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=15",
+          "farmer_name": "সালমা বেগম",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 7,
+          "name": "আম (ল্যাংড়া)",
+          "price": 120,
+          "quantity": 88,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=7",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 12,
+          "name": "পেয়ারা",
+          "price": 80,
+          "quantity": 53,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=12",
+          "farmer_name": "আব্দুল মালেক",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 8,
+          "name": "কলা (সাগর)",
+          "price": 70,
+          "quantity": 354,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=8",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 13,
+          "name": "চাল (মিনিকেট)",
+          "price": 70,
+          "quantity": 344,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=13",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 1,
+          "name": "টমেটো",
+          "price": 60,
+          "quantity": 366,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=1",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 11,
+          "name": "আনারস",
+          "price": 60,
+          "quantity": 246,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=11",
+          "farmer_name": "নাজমা খাতুন",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 5,
+          "name": "পটল",
+          "price": 55,
+          "quantity": 40,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=5",
+          "farmer_name": "নাজমা খাতুন",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 14,
+          "name": "গম",
+          "price": 55,
+          "quantity": 335,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=14",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 3,
+          "name": "বেগুন",
+          "price": 50,
+          "quantity": 272,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=3",
+          "farmer_name": "সালমা বেগম",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 4,
+          "name": "ফুলকপি",
+          "price": 45,
+          "quantity": 211,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=4",
+          "farmer_name": "জামাল হোসেন",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 9,
+          "name": "পেঁপে",
+          "price": 45,
+          "quantity": 332,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=9",
+          "farmer_name": "সালমা বেগম",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 6,
+          "name": "লাউ",
+          "price": 40,
+          "quantity": 457,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=6",
+          "farmer_name": "আব্দুল মালেক",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 16,
+          "name": "ভুট্টা",
+          "price": 40,
+          "quantity": 89,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=16",
+          "farmer_name": "জামাল হোসেন",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 2,
+          "name": "আলু",
+          "price": 35,
+          "quantity": 91,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=2",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "সবজি"
+        }
+      ],
+      "?category_id=1": [
+        {
+          "product_id": 5,
+          "name": "পটল",
+          "price": 55,
+          "quantity": 40,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=5",
+          "farmer_name": "নাজমা খাতুন",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 2,
+          "name": "আলু",
+          "price": 35,
+          "quantity": 91,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=2",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 1,
+          "name": "টমেটো",
+          "price": 60,
+          "quantity": 366,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=1",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 4,
+          "name": "ফুলকপি",
+          "price": 45,
+          "quantity": 211,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=4",
+          "farmer_name": "জামাল হোসেন",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 6,
+          "name": "লাউ",
+          "price": 40,
+          "quantity": 457,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=6",
+          "farmer_name": "আব্দুল মালেক",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 3,
+          "name": "বেগুন",
+          "price": 50,
+          "quantity": 272,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=3",
+          "farmer_name": "সালমা বেগম",
+          "category_name": "সবজি"
+        }
+      ],
+      "?category_id=2": [
+        {
+          "product_id": 8,
+          "name": "কলা (সাগর)",
+          "price": 70,
+          "quantity": 354,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=8",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 12,
+          "name": "পেয়ারা",
+          "price": 80,
+          "quantity": 53,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=12",
+          "farmer_name": "আব্দুল মালেক",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 10,
+          "name": "লিচু",
+          "price": 200,
+          "quantity": 185,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=10",
+          "farmer_name": "জামাল হোসেন",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 7,
+          "name": "আম (ল্যাংড়া)",
+          "price": 120,
+          "quantity": 88,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=7",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 9,
+          "name": "পেঁপে",
+          "price": 45,
+          "quantity": 332,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=9",
+          "farmer_name": "সালমা বেগম",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 11,
+          "name": "আনারস",
+          "price": 60,
+          "quantity": 246,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=11",
+          "farmer_name": "নাজমা খাতুন",
+          "category_name": "ফল"
+        }
+      ],
+      "?category_id=3": [
+        {
+          "product_id": 15,
+          "name": "মসুর ডাল",
+          "price": 130,
+          "quantity": 55,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=15",
+          "farmer_name": "সালমা বেগম",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 13,
+          "name": "চাল (মিনিকেট)",
+          "price": 70,
+          "quantity": 344,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=13",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 14,
+          "name": "গম",
+          "price": 55,
+          "quantity": 335,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=14",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 16,
+          "name": "ভুট্টা",
+          "price": 40,
+          "quantity": 89,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=16",
+          "farmer_name": "জামাল হোসেন",
+          "category_name": "শস্য"
+        },
+        {
+          "product_id": 17,
+          "name": "সরিষা",
+          "price": 150,
+          "quantity": 390,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=17",
+          "farmer_name": "নাজমা খাতুন",
+          "category_name": "শস্য"
+        }
+      ],
+      "?category_id=4": [
+        {
+          "product_id": 21,
+          "name": "রসুন",
+          "price": 180,
+          "quantity": 78,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=21",
+          "farmer_name": "সালমা বেগম",
+          "category_name": "মশলা"
+        },
+        {
+          "product_id": 18,
+          "name": "হলুদ",
+          "price": 250,
+          "quantity": 49,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=18",
+          "farmer_name": "আব্দুল মালেক",
+          "category_name": "মশলা"
+        },
+        {
+          "product_id": 20,
+          "name": "আদা",
+          "price": 220,
+          "quantity": 462,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=20",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "মশলা"
+        },
+        {
+          "product_id": 19,
+          "name": "শুকনা মরিচ",
+          "price": 300,
+          "quantity": 214,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=19",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "মশলা"
+        }
+      ],
+      "?category_id=5": [
+        {
+          "product_id": 23,
+          "name": "খাঁটি মধু",
+          "price": 700,
+          "quantity": 322,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=23",
+          "farmer_name": "নাজমা খাতুন",
+          "category_name": "অন্যান্য"
+        },
+        {
+          "product_id": 24,
+          "name": "সরিষার তেল",
+          "price": 260,
+          "quantity": 205,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=24",
+          "farmer_name": "আব্দুল মালেক",
+          "category_name": "অন্যান্য"
+        },
+        {
+          "product_id": 22,
+          "name": "খেজুরের গুড়",
+          "price": 320,
+          "quantity": 240,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=22",
+          "farmer_name": "জামাল হোসেন",
+          "category_name": "অন্যান্য"
+        }
+      ],
+      "?name=আ": [
+        {
+          "product_id": 2,
+          "name": "আলু",
+          "price": 35,
+          "quantity": 91,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=2",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "সবজি"
+        },
+        {
+          "product_id": 7,
+          "name": "আম (ল্যাংড়া)",
+          "price": 120,
+          "quantity": 88,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=7",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "ফল"
+        },
+        {
+          "product_id": 20,
+          "name": "আদা",
+          "price": 220,
+          "quantity": 462,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=20",
+          "farmer_name": "করিম মিয়া",
+          "category_name": "মশলা"
+        },
+        {
+          "product_id": 11,
+          "name": "আনারস",
+          "price": 60,
+          "quantity": 246,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=11",
+          "farmer_name": "নাজমা খাতুন",
+          "category_name": "ফল"
+        }
+      ],
+      "?name=টমেটো": [
+        {
+          "product_id": 1,
+          "name": "টমেটো",
+          "price": 60,
+          "quantity": 366,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=1",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "সবজি"
+        }
+      ],
+      "?name=চাল": [
+        {
+          "product_id": 13,
+          "name": "চাল (মিনিকেট)",
+          "price": 70,
+          "quantity": 344,
+          "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=13",
+          "farmer_name": "রহিম উদ্দিন",
+          "category_name": "শস্য"
+        }
+      ]
+    },
+    "GET /api/products/my-products": {
+      "byFarmerId": {
+        "2": [
+          {
+            "product_id": 1,
+            "name": "টমেটো",
+            "price": 60,
+            "quantity": 366,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=1",
+            "category_name": "সবজি"
+          },
+          {
+            "product_id": 13,
+            "name": "চাল (মিনিকেট)",
+            "price": 70,
+            "quantity": 344,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=13",
+            "category_name": "শস্য"
+          },
+          {
+            "product_id": 7,
+            "name": "আম (ল্যাংড়া)",
+            "price": 120,
+            "quantity": 88,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=7",
+            "category_name": "ফল"
+          },
+          {
+            "product_id": 19,
+            "name": "শুকনা মরিচ",
+            "price": 300,
+            "quantity": 214,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=19",
+            "category_name": "মশলা"
+          }
+        ],
+        "3": [
+          {
+            "product_id": 8,
+            "name": "কলা (সাগর)",
+            "price": 70,
+            "quantity": 354,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=8",
+            "category_name": "ফল"
+          },
+          {
+            "product_id": 2,
+            "name": "আলু",
+            "price": 35,
+            "quantity": 91,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=2",
+            "category_name": "সবজি"
+          },
+          {
+            "product_id": 14,
+            "name": "গম",
+            "price": 55,
+            "quantity": 335,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=14",
+            "category_name": "শস্য"
+          },
+          {
+            "product_id": 20,
+            "name": "আদা",
+            "price": 220,
+            "quantity": 462,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=20",
+            "category_name": "মশলা"
+          }
+        ],
+        "4": [
+          {
+            "product_id": 15,
+            "name": "মসুর ডাল",
+            "price": 130,
+            "quantity": 55,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=15",
+            "category_name": "শস্য"
+          },
+          {
+            "product_id": 21,
+            "name": "রসুন",
+            "price": 180,
+            "quantity": 78,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=21",
+            "category_name": "মশলা"
+          },
+          {
+            "product_id": 9,
+            "name": "পেঁপে",
+            "price": 45,
+            "quantity": 332,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=9",
+            "category_name": "ফল"
+          },
+          {
+            "product_id": 3,
+            "name": "বেগুন",
+            "price": 50,
+            "quantity": 272,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=3",
+            "category_name": "সবজি"
+          }
+        ],
+        "5": [
+          {
+            "product_id": 4,
+            "name": "ফুলকপি",
+            "price": 45,
+            "quantity": 211,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=4",
+            "category_name": "সবজি"
+          },
+          {
+            "product_id": 10,
+            "name": "লিচু",
+            "price": 200,
+            "quantity": 185,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=10",
+            "category_name": "ফল"
+          },
+          {
+            "product_id": 16,
+            "name": "ভুট্টা",
+            "price": 40,
+            "quantity": 89,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=16",
+            "category_name": "শস্য"
+          },
+          {
+            "product_id": 22,
+            "name": "খেজুরের গুড়",
+            "price": 320,
+            "quantity": 240,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=22",
+            "category_name": "অন্যান্য"
+          }
+        ],
+        "6": [
+          {
+            "product_id": 5,
+            "name": "পটল",
+            "price": 55,
+            "quantity": 40,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=5",
+            "category_name": "সবজি"
+          },
+          {
+            "product_id": 23,
+            "name": "খাঁটি মধু",
+            "price": 700,
+            "quantity": 322,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=23",
+            "category_name": "অন্যান্য"
+          },
+          {
+            "product_id": 11,
+            "name": "আনারস",
+            "price": 60,
+            "quantity": 246,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=11",
+            "category_name": "ফল"
+          },
+          {
+            "product_id": 17,
+            "name": "সরিষা",
+            "price": 150,
+            "quantity": 390,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=17",
+            "category_name": "শস্য"
+          }
+        ],
+        "7": [
+          {
+            "product_id": 24,
+            "name": "সরিষার তেল",
+            "price": 260,
+            "quantity": 205,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=24",
+            "category_name": "অন্যান্য"
+          },
+          {
+            "product_id": 12,
+            "name": "পেয়ারা",
+            "price": 80,
+            "quantity": 53,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=12",
+            "category_name": "ফল"
+          },
+          {
+            "product_id": 18,
+            "name": "হলুদ",
+            "price": 250,
+            "quantity": 49,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=18",
+            "category_name": "মশলা"
+          },
+          {
+            "product_id": 6,
+            "name": "লাউ",
+            "price": 40,
+            "quantity": 457,
+            "image_url": "https://placehold.co/400x300/2E7D32/FFFFFF?text=6",
+            "category_name": "সবজি"
+          }
+        ]
+      }
+    },
+    "GET /api/products/stats": {
+      "byFarmerId": {
+        "2": {
+          "total_products": 4,
+          "total_earnings": 9840,
+          "avg_price": 137.5
+        },
+        "3": {
+          "total_products": 4,
+          "total_earnings": 7485,
+          "avg_price": 95.0
+        },
+        "4": {
+          "total_products": 4,
+          "total_earnings": 3715,
+          "avg_price": 101.25
+        },
+        "5": {
+          "total_products": 4,
+          "total_earnings": 10535,
+          "avg_price": 151.25
+        },
+        "6": {
+          "total_products": 4,
+          "total_earnings": 7860,
+          "avg_price": 241.25
+        },
+        "7": {
+          "total_products": 4,
+          "total_earnings": 7350,
+          "avg_price": 157.5
+        }
+      }
+    },
+    "POST /api/products/add": {
+      "success": {
+        "status": 201,
+        "body": {
+          "message": "✅ Product added successfully!",
+          "productId": 25
+        }
+      }
+    },
+    "DELETE /api/products/delete/:id": {
+      "success": {
+        "status": 200,
+        "body": {
+          "message": "✅ Product deleted!"
+        }
+      },
+      "errors": [
+        {
+          "status": 403,
+          "body": {
+            "message": "❌ Not your product!"
+          }
+        }
+      ]
+    },
+    "POST /api/orders/place": {
+      "success": {
+        "status": 201,
+        "body": {
+          "message": "✅ Order placed successfully!",
+          "orderId": 35,
+          "total_price": 600,
+          "platform_fee": 60,
+          "farmer_amount": 540
+        }
+      },
+      "errors": [
+        {
+          "status": 404,
+          "body": {
+            "message": "❌ Product not found!"
+          }
+        },
+        {
+          "status": 400,
+          "body": {
+            "message": "❌ Only 12kg available!"
+          }
+        }
+      ]
+    },
+    "GET /api/orders/my-orders": {
+      "byBuyerId": {
+        "10": [
+          {
+            "order_id": 11,
+            "quantity": 5,
+            "total_price": 250,
+            "platform_fee": 25.0,
+            "farmer_amount": 225.0,
+            "status": "cancelled",
+            "order_date": "2026-11-14T07:35:00.000Z",
+            "product_name": "বেগুন",
+            "price": 50,
+            "farmer_name": "সালমা বেগম"
+          },
+          {
+            "order_id": 6,
+            "quantity": 4,
+            "total_price": 140,
+            "platform_fee": 14.0,
+            "farmer_amount": 126.0,
+            "status": "pending",
+            "order_date": "2026-11-13T14:02:00.000Z",
+            "product_name": "আলু",
+            "price": 35,
+            "farmer_name": "করিম মিয়া"
+          },
+          {
+            "order_id": 8,
+            "quantity": 18,
+            "total_price": 1080,
+            "platform_fee": 108.0,
+            "farmer_amount": 972.0,
+            "status": "confirmed",
+            "order_date": "2026-11-11T08:47:00.000Z",
+            "product_name": "আনারস",
+            "price": 60,
+            "farmer_name": "নাজমা খাতুন"
+          },
+          {
+            "order_id": 3,
+            "quantity": 2,
+            "total_price": 140,
+            "platform_fee": 14.0,
+            "farmer_amount": 126.0,
+            "status": "pending",
+            "order_date": "2026-10-29T08:21:00.000Z",
+            "product_name": "কলা (সাগর)",
+            "price": 70,
+            "farmer_name": "করিম মিয়া"
+          },
+          {
+            "order_id": 23,
+            "quantity": 15,
+            "total_price": 900,
+            "platform_fee": 90.0,
+            "farmer_amount": 810.0,
+            "status": "confirmed",
+            "order_date": "2026-10-29T08:07:00.000Z",
+            "product_name": "টমেটো",
+            "price": 60,
+            "farmer_name": "রহিম উদ্দিন"
+          },
+          {
+            "order_id": 22,
+            "quantity": 14,
+            "total_price": 560,
+            "platform_fee": 56.0,
+            "farmer_amount": 504.0,
+            "status": "confirmed",
+            "order_date": "2026-10-25T13:40:00.000Z",
+            "product_name": "লাউ",
+            "price": 40,
+            "farmer_name": "আব্দুল মালেক"
+          }
+        ],
+        "11": [
+          {
+            "order_id": 33,
+            "quantity": 8,
+            "total_price": 2560,
+            "platform_fee": 256.0,
+            "farmer_amount": 2304.0,
+            "status": "confirmed",
+            "order_date": "2026-11-09T00:24:00.000Z",
+            "product_name": "খেজুরের গুড়",
+            "price": 320,
+            "farmer_name": "জামাল হোসেন"
+          },
+          {
+            "order_id": 10,
+            "quantity": 20,
+            "total_price": 5000,
+            "platform_fee": 500.0,
+            "farmer_amount": 4500.0,
+            "status": "confirmed",
+            "order_date": "2026-10-28T15:56:00.000Z",
+            "product_name": "হলুদ",
+            "price": 250,
+            "farmer_name": "আব্দুল মালেক"
+          }
+        ],
+        "12": [
+          {
+            "order_id": 31,
+            "quantity": 15,
+            "total_price": 825,
+            "platform_fee": 82.5,
+            "farmer_amount": 742.5,
+            "status": "confirmed",
+            "order_date": "2026-11-12T03:56:00.000Z",
+            "product_name": "গম",
+            "price": 55,
+            "farmer_name": "করিম মিয়া"
+          },
+          {
+            "order_id": 14,
+            "quantity": 7,
+            "total_price": 420,
+            "platform_fee": 42.0,
+            "farmer_amount": 378.0,
+            "status": "confirmed",
+            "order_date": "2026-10-27T12:52:00.000Z",
+            "product_name": "টমেটো",
+            "price": 60,
+            "farmer_name": "রহিম উদ্দিন"
+          },
+          {
+            "order_id": 4,
+            "quantity": 16,
+            "total_price": 2400,
+            "platform_fee": 240.0,
+            "farmer_amount": 2160.0,
+            "status": "pending",
+            "order_date": "2026-10-26T10:16:00.000Z",
+            "product_name": "সরিষা",
+            "price": 150,
+            "farmer_name": "নাজমা খাতুন"
+          },
+          {
+            "order_id": 9,
+            "quantity": 8,
+            "total_price": 440,
+            "platform_fee": 44.0,
+            "farmer_amount": 396.0,
+            "status": "confirmed",
+            "order_date": "2026-10-25T19:36:00.000Z",
+            "product_name": "গম",
+            "price": 55,
+            "farmer_name": "করিম মিয়া"
+          }
+        ],
+        "13": [
+          {
+            "order_id": 32,
+            "quantity": 8,
+            "total_price": 360,
+            "platform_fee": 36.0,
+            "farmer_amount": 324.0,
+            "status": "confirmed",
+            "order_date": "2026-11-13T08:43:00.000Z",
+            "product_name": "পেঁপে",
+            "price": 45,
+            "farmer_name": "সালমা বেগম"
+          },
+          {
+            "order_id": 17,
+            "quantity": 7,
+            "total_price": 350,
+            "platform_fee": 35.0,
+            "farmer_amount": 315.0,
+            "status": "confirmed",
+            "order_date": "2026-11-12T19:00:00.000Z",
+            "product_name": "বেগুন",
+            "price": 50,
+            "farmer_name": "সালমা বেগম"
+          },
+          {
+            "order_id": 21,
+            "quantity": 6,
+            "total_price": 1200,
+            "platform_fee": 120.0,
+            "farmer_amount": 1080.0,
+            "status": "confirmed",
+            "order_date": "2026-11-06T17:44:00.000Z",
+            "product_name": "লিচু",
+            "price": 200,
+            "farmer_name": "জামাল হোসেন"
+          }
+        ],
+        "14": [
+          {
+            "order_id": 19,
+            "quantity": 11,
+            "total_price": 2420,
+            "platform_fee": 242.0,
+            "farmer_amount": 2178.0,
+            "status": "cancelled",
+            "order_date": "2026-11-04T17:07:00.000Z",
+            "product_name": "আদা",
+            "price": 220,
+            "farmer_name": "করিম মিয়া"
+          },
+          {
+            "order_id": 12,
+            "quantity": 11,
+            "total_price": 495,
+            "platform_fee": 49.5,
+            "farmer_amount": 445.5,
+            "status": "pending",
+            "order_date": "2026-11-03T22:30:00.000Z",
+            "product_name": "ফুলকপি",
+            "price": 45,
+            "farmer_name": "জামাল হোসেন"
+          },
+          {
+            "order_id": 1,
+            "quantity": 5,
+            "total_price": 3500,
+            "platform_fee": 350.0,
+            "farmer_amount": 3150.0,
+            "status": "confirmed",
+            "order_date": "2026-11-02T16:11:00.000Z",
+            "product_name": "খাঁটি মধু",
+            "price": 700,
+            "farmer_name": "নাজমা খাতুন"
+          },
+          {
+            "order_id": 7,
+            "quantity": 18,
+            "total_price": 2160,
+            "platform_fee": 216.0,
+            "farmer_amount": 1944.0,
+            "status": "pending",
+            "order_date": "2026-10-30T01:19:00.000Z",
+            "product_name": "আম (ল্যাংড়া)",
+            "price": 120,
+            "farmer_name": "রহিম উদ্দিন"
+          },
+          {
+            "order_id": 26,
+            "quantity": 7,
+            "total_price": 1540,
+            "platform_fee": 154.0,
+            "farmer_amount": 1386.0,
+            "status": "confirmed",
+            "order_date": "2026-10-26T03:12:00.000Z",
+            "product_name": "আদা",
+            "price": 220,
+            "farmer_name": "করিম মিয়া"
+          }
+        ],
+        "15": [
+          {
+            "order_id": 25,
+            "quantity": 3,
+            "total_price": 750,
+            "platform_fee": 75.0,
+            "farmer_amount": 675.0,
+            "status": "confirmed",
+            "order_date": "2026-11-10T20:35:00.000Z",
+            "product_name": "হলুদ",
+            "price": 250,
+            "farmer_name": "আব্দুল মালেক"
+          },
+          {
+            "order_id": 27,
+            "quantity": 16,
+            "total_price": 2080,
+            "platform_fee": 208.0,
+            "farmer_amount": 1872.0,
+            "status": "confirmed",
+            "order_date": "2026-10-31T04:43:00.000Z",
+            "product_name": "মসুর ডাল",
+            "price": 130,
+            "farmer_name": "সালমা বেগম"
+          }
+        ],
+        "16": [
+          {
+            "order_id": 20,
+            "quantity": 2,
+            "total_price": 440,
+            "platform_fee": 44.0,
+            "farmer_amount": 396.0,
+            "status": "confirmed",
+            "order_date": "2026-11-13T10:22:00.000Z",
+            "product_name": "আদা",
+            "price": 220,
+            "farmer_name": "করিম মিয়া"
+          },
+          {
+            "order_id": 5,
+            "quantity": 14,
+            "total_price": 770,
+            "platform_fee": 77.0,
+            "farmer_amount": 693.0,
+            "status": "pending",
+            "order_date": "2026-11-09T09:42:00.000Z",
+            "product_name": "পটল",
+            "price": 55,
+            "farmer_name": "নাজমা খাতুন"
+          },
+          {
+            "order_id": 34,
+            "quantity": 15,
+            "total_price": 1800,
+            "platform_fee": 180.0,
+            "farmer_amount": 1620.0,
+            "status": "cancelled",
+            "order_date": "2026-10-29T05:43:00.000Z",
+            "product_name": "আম (ল্যাংড়া)",
+            "price": 120,
+            "farmer_name": "রহিম উদ্দিন"
+          }
+        ],
+        "17": [
+          {
+            "order_id": 29,
+            "quantity": 12,
+            "total_price": 3600,
+            "platform_fee": 360.0,
+            "farmer_amount": 3240.0,
+            "status": "cancelled",
+            "order_date": "2026-11-12T17:11:00.000Z",
+            "product_name": "শুকনা মরিচ",
+            "price": 300,
+            "farmer_name": "রহিম উদ্দিন"
+          },
+          {
+            "order_id": 30,
+            "quantity": 15,
+            "total_price": 675,
+            "platform_fee": 67.5,
+            "farmer_amount": 607.5,
+            "status": "pending",
+            "order_date": "2026-11-05T04:16:00.000Z",
+            "product_name": "পেঁপে",
+            "price": 45,
+            "farmer_name": "সালমা বেগম"
+          },
+          {
+            "order_id": 2,
+            "quantity": 14,
+            "total_price": 4480,
+            "platform_fee": 448.0,
+            "farmer_amount": 4032.0,
+            "status": "confirmed",
+            "order_date": "2026-10-25T23:15:00.000Z",
+            "product_name": "খেজুরের গুড়",
+            "price": 320,
+            "farmer_name": "জামাল হোসেন"
+          }
+        ],
+        "18": [
+          {
+            "order_id": 13,
+            "quantity": 16,
+            "total_price": 960,
+            "platform_fee": 96.0,
+            "farmer_amount": 864.0,
+            "status": "pending",
+            "order_date": "2026-11-11T08:59:00.000Z",
+            "product_name": "টমেটো",
+            "price": 60,
+            "farmer_name": "রহিম উদ্দিন"
+          },
+          {
+            "order_id": 16,
+            "quantity": 2,
+            "total_price": 140,
+            "platform_fee": 14.0,
+            "farmer_amount": 126.0,
+            "status": "confirmed",
+            "order_date": "2026-11-10T22:13:00.000Z",
+            "product_name": "কলা (সাগর)",
+            "price": 70,
+            "farmer_name": "করিম মিয়া"
+          },
+          {
+            "order_id": 15,
+            "quantity": 20,
+            "total_price": 1400,
+            "platform_fee": 140.0,
+            "farmer_amount": 1260.0,
+            "status": "cancelled",
+            "order_date": "2026-11-09T06:27:00.000Z",
+            "product_name": "কলা (সাগর)",
+            "price": 70,
+            "farmer_name": "করিম মিয়া"
+          },
+          {
+            "order_id": 28,
+            "quantity": 4,
+            "total_price": 1040,
+            "platform_fee": 104.0,
+            "farmer_amount": 936.0,
+            "status": "confirmed",
+            "order_date": "2026-11-06T12:18:00.000Z",
+            "product_name": "সরিষার তেল",
+            "price": 260,
+            "farmer_name": "আব্দুল মালেক"
+          },
+          {
+            "order_id": 18,
+            "quantity": 9,
+            "total_price": 1800,
+            "platform_fee": 180.0,
+            "farmer_amount": 1620.0,
+            "status": "confirmed",
+            "order_date": "2026-10-30T17:14:00.000Z",
+            "product_name": "লিচু",
+            "price": 200,
+            "farmer_name": "জামাল হোসেন"
+          }
+        ],
+        "19": [
+          {
+            "order_id": 24,
+            "quantity": 2,
+            "total_price": 110,
+            "platform_fee": 11.0,
+            "farmer_amount": 99.0,
+            "status": "confirmed",
+            "order_date": "2026-10-27T09:52:00.000Z",
+            "product_name": "পটল",
+            "price": 55,
+            "farmer_name": "নাজমা খাতুন"
+          }
+        ]
+      }
+    },
+    "GET /api/orders/farmer-orders": {
+      "byFarmerId": {
+        "2": [
+          {
+            "order_id": 29,
+            "quantity": 12,
+            "total_price": 3600,
+            "platform_fee": 360.0,
+            "farmer_amount": 3240.0,
+            "status": "cancelled",
+            "order_date": "2026-11-12T17:11:00.000Z",
+            "product_name": "শুকনা মরিচ",
+            "buyer_name": "রাফি চৌধুরী"
+          },
+          {
+            "order_id": 13,
+            "quantity": 16,
+            "total_price": 960,
+            "platform_fee": 96.0,
+            "farmer_amount": 864.0,
+            "status": "pending",
+            "order_date": "2026-11-11T08:59:00.000Z",
+            "product_name": "টমেটো",
+            "buyer_name": "মীম সুলতানা"
+          },
+          {
+            "order_id": 7,
+            "quantity": 18,
+            "total_price": 2160,
+            "platform_fee": 216.0,
+            "farmer_amount": 1944.0,
+            "status": "pending",
+            "order_date": "2026-10-30T01:19:00.000Z",
+            "product_name": "আম (ল্যাংড়া)",
+            "buyer_name": "ইসরাত জাহান"
+          },
+          {
+            "order_id": 23,
+            "quantity": 15,
+            "total_price": 900,
+            "platform_fee": 90.0,
+            "farmer_amount": 810.0,
+            "status": "confirmed",
+            "order_date": "2026-10-29T08:07:00.000Z",
+            "product_name": "টমেটো",
+            "buyer_name": "ফাহিম রহমান"
+          },
+          {
+            "order_id": 34,
+            "quantity": 15,
+            "total_price": 1800,
+            "platform_fee": 180.0,
+            "farmer_amount": 1620.0,
+            "status": "cancelled",
+            "order_date": "2026-10-29T05:43:00.000Z",
+            "product_name": "আম (ল্যাংড়া)",
+            "buyer_name": "তাসনিম আক্তার"
+          },
+          {
+            "order_id": 14,
+            "quantity": 7,
+            "total_price": 420,
+            "platform_fee": 42.0,
+            "farmer_amount": 378.0,
+            "status": "confirmed",
+            "order_date": "2026-10-27T12:52:00.000Z",
+            "product_name": "টমেটো",
+            "buyer_name": "নুসরাত জাহান"
+          }
+        ],
+        "3": [
+          {
+            "order_id": 6,
+            "quantity": 4,
+            "total_price": 140,
+            "platform_fee": 14.0,
+            "farmer_amount": 126.0,
+            "status": "pending",
+            "order_date": "2026-11-13T14:02:00.000Z",
+            "product_name": "আলু",
+            "buyer_name": "ফাহিম রহমান"
+          },
+          {
+            "order_id": 20,
+            "quantity": 2,
+            "total_price": 440,
+            "platform_fee": 44.0,
+            "farmer_amount": 396.0,
+            "status": "confirmed",
+            "order_date": "2026-11-13T10:22:00.000Z",
+            "product_name": "আদা",
+            "buyer_name": "তাসনিম আক্তার"
+          },
+          {
+            "order_id": 31,
+            "quantity": 15,
+            "total_price": 825,
+            "platform_fee": 82.5,
+            "farmer_amount": 742.5,
+            "status": "confirmed",
+            "order_date": "2026-11-12T03:56:00.000Z",
+            "product_name": "গম",
+            "buyer_name": "নুসরাত জাহান"
+          },
+          {
+            "order_id": 16,
+            "quantity": 2,
+            "total_price": 140,
+            "platform_fee": 14.0,
+            "farmer_amount": 126.0,
+            "status": "confirmed",
+            "order_date": "2026-11-10T22:13:00.000Z",
+            "product_name": "কলা (সাগর)",
+            "buyer_name": "মীম সুলতানা"
+          },
+          {
+            "order_id": 15,
+            "quantity": 20,
+            "total_price": 1400,
+            "platform_fee": 140.0,
+            "farmer_amount": 1260.0,
+            "status": "cancelled",
+            "order_date": "2026-11-09T06:27:00.000Z",
+            "product_name": "কলা (সাগর)",
+            "buyer_name": "মীম সুলতানা"
+          },
+          {
+            "order_id": 19,
+            "quantity": 11,
+            "total_price": 2420,
+            "platform_fee": 242.0,
+            "farmer_amount": 2178.0,
+            "status": "cancelled",
+            "order_date": "2026-11-04T17:07:00.000Z",
+            "product_name": "আদা",
+            "buyer_name": "ইসরাত জাহান"
+          },
+          {
+            "order_id": 3,
+            "quantity": 2,
+            "total_price": 140,
+            "platform_fee": 14.0,
+            "farmer_amount": 126.0,
+            "status": "pending",
+            "order_date": "2026-10-29T08:21:00.000Z",
+            "product_name": "কলা (সাগর)",
+            "buyer_name": "ফাহিম রহমান"
+          },
+          {
+            "order_id": 26,
+            "quantity": 7,
+            "total_price": 1540,
+            "platform_fee": 154.0,
+            "farmer_amount": 1386.0,
+            "status": "confirmed",
+            "order_date": "2026-10-26T03:12:00.000Z",
+            "product_name": "আদা",
+            "buyer_name": "ইসরাত জাহান"
+          },
+          {
+            "order_id": 9,
+            "quantity": 8,
+            "total_price": 440,
+            "platform_fee": 44.0,
+            "farmer_amount": 396.0,
+            "status": "confirmed",
+            "order_date": "2026-10-25T19:36:00.000Z",
+            "product_name": "গম",
+            "buyer_name": "নুসরাত জাহান"
+          }
+        ],
+        "4": [
+          {
+            "order_id": 11,
+            "quantity": 5,
+            "total_price": 250,
+            "platform_fee": 25.0,
+            "farmer_amount": 225.0,
+            "status": "cancelled",
+            "order_date": "2026-11-14T07:35:00.000Z",
+            "product_name": "বেগুন",
+            "buyer_name": "ফাহিম রহমান"
+          },
+          {
+            "order_id": 32,
+            "quantity": 8,
+            "total_price": 360,
+            "platform_fee": 36.0,
+            "farmer_amount": 324.0,
+            "status": "confirmed",
+            "order_date": "2026-11-13T08:43:00.000Z",
+            "product_name": "পেঁপে",
+            "buyer_name": "মেহেদী হাসান"
+          },
+          {
+            "order_id": 17,
+            "quantity": 7,
+            "total_price": 350,
+            "platform_fee": 35.0,
+            "farmer_amount": 315.0,
+            "status": "confirmed",
+            "order_date": "2026-11-12T19:00:00.000Z",
+            "product_name": "বেগুন",
+            "buyer_name": "মেহেদী হাসান"
+          },
+          {
+            "order_id": 30,
+            "quantity": 15,
+            "total_price": 675,
+            "platform_fee": 67.5,
+            "farmer_amount": 607.5,
+            "status": "pending",
+            "order_date": "2026-11-05T04:16:00.000Z",
+            "product_name": "পেঁপে",
+            "buyer_name": "রাফি চৌধুরী"
+          },
+          {
+            "order_id": 27,
+            "quantity": 16,
+            "total_price": 2080,
+            "platform_fee": 208.0,
+            "farmer_amount": 1872.0,
+            "status": "confirmed",
+            "order_date": "2026-10-31T04:43:00.000Z",
+            "product_name": "মসুর ডাল",
+            "buyer_name": "সাকিব হাসান"
+          }
+        ],
+        "5": [
+          {
+            "order_id": 33,
+            "quantity": 8,
+            "total_price": 2560,
+            "platform_fee": 256.0,
+            "farmer_amount": 2304.0,
+            "status": "confirmed",
+            "order_date": "2026-11-09T00:24:00.000Z",
+            "product_name": "খেজুরের গুড়",
+            "buyer_name": "তানভীর আহমেদ"
+          },
+          {
+            "order_id": 21,
+            "quantity": 6,
+            "total_price": 1200,
+            "platform_fee": 120.0,
+            "farmer_amount": 1080.0,
+            "status": "confirmed",
+            "order_date": "2026-11-06T17:44:00.000Z",
+            "product_name": "লিচু",
+            "buyer_name": "মেহেদী হাসান"
+          },
+          {
+            "order_id": 12,
+            "quantity": 11,
+            "total_price": 495,
+            "platform_fee": 49.5,
+            "farmer_amount": 445.5,
+            "status": "pending",
+            "order_date": "2026-11-03T22:30:00.000Z",
+            "product_name": "ফুলকপি",
+            "buyer_name": "ইসরাত জাহান"
+          },
+          {
+            "order_id": 18,
+            "quantity": 9,
+            "total_price": 1800,
+            "platform_fee": 180.0,
+            "farmer_amount": 1620.0,
+            "status": "confirmed",
+            "order_date": "2026-10-30T17:14:00.000Z",
+            "product_name": "লিচু",
+            "buyer_name": "মীম সুলতানা"
+          },
+          {
+            "order_id": 2,
+            "quantity": 14,
+            "total_price": 4480,
+            "platform_fee": 448.0,
+            "farmer_amount": 4032.0,
+            "status": "confirmed",
+            "order_date": "2026-10-25T23:15:00.000Z",
+            "product_name": "খেজুরের গুড়",
+            "buyer_name": "রাফি চৌধুরী"
+          }
+        ],
+        "6": [
+          {
+            "order_id": 8,
+            "quantity": 18,
+            "total_price": 1080,
+            "platform_fee": 108.0,
+            "farmer_amount": 972.0,
+            "status": "confirmed",
+            "order_date": "2026-11-11T08:47:00.000Z",
+            "product_name": "আনারস",
+            "buyer_name": "ফাহিম রহমান"
+          },
+          {
+            "order_id": 5,
+            "quantity": 14,
+            "total_price": 770,
+            "platform_fee": 77.0,
+            "farmer_amount": 693.0,
+            "status": "pending",
+            "order_date": "2026-11-09T09:42:00.000Z",
+            "product_name": "পটল",
+            "buyer_name": "তাসনিম আক্তার"
+          },
+          {
+            "order_id": 1,
+            "quantity": 5,
+            "total_price": 3500,
+            "platform_fee": 350.0,
+            "farmer_amount": 3150.0,
+            "status": "confirmed",
+            "order_date": "2026-11-02T16:11:00.000Z",
+            "product_name": "খাঁটি মধু",
+            "buyer_name": "ইসরাত জাহান"
+          },
+          {
+            "order_id": 24,
+            "quantity": 2,
+            "total_price": 110,
+            "platform_fee": 11.0,
+            "farmer_amount": 99.0,
+            "status": "confirmed",
+            "order_date": "2026-10-27T09:52:00.000Z",
+            "product_name": "পটল",
+            "buyer_name": "শাওন দাস"
+          },
+          {
+            "order_id": 4,
+            "quantity": 16,
+            "total_price": 2400,
+            "platform_fee": 240.0,
+            "farmer_amount": 2160.0,
+            "status": "pending",
+            "order_date": "2026-10-26T10:16:00.000Z",
+            "product_name": "সরিষা",
+            "buyer_name": "নুসরাত জাহান"
+          }
+        ],
+        "7": [
+          {
+            "order_id": 25,
+            "quantity": 3,
+            "total_price": 750,
+            "platform_fee": 75.0,
+            "farmer_amount": 675.0,
+            "status": "confirmed",
+            "order_date": "2026-11-10T20:35:00.000Z",
+            "product_name": "হলুদ",
+            "buyer_name": "সাকিব হাসান"
+          },
+          {
+            "order_id": 28,
+            "quantity": 4,
+            "total_price": 1040,
+            "platform_fee": 104.0,
+            "farmer_amount": 936.0,
+            "status": "confirmed",
+            "order_date": "2026-11-06T12:18:00.000Z",
+            "product_name": "সরিষার তেল",
+            "buyer_name": "মীম সুলতানা"
+          },
+          {
+            "order_id": 10,
+            "quantity": 20,
+            "total_price": 5000,
+            "platform_fee": 500.0,
+            "farmer_amount": 4500.0,
+            "status": "confirmed",
+            "order_date": "2026-10-28T15:56:00.000Z",
+            "product_name": "হলুদ",
+            "buyer_name": "তানভীর আহমেদ"
+          },
+          {
+            "order_id": 22,
+            "quantity": 14,
+            "total_price": 560,
+            "platform_fee": 56.0,
+            "farmer_amount": 504.0,
+            "status": "confirmed",
+            "order_date": "2026-10-25T13:40:00.000Z",
+            "product_name": "লাউ",
+            "buyer_name": "ফাহিম রহমান"
+          }
+        ]
+      }
+    },
+    "GET /api/orders/all": [
+      {
+        "order_id": 11,
+        "quantity": 5,
+        "total_price": 250,
+        "platform_fee": 25.0,
+        "farmer_amount": 225.0,
+        "status": "cancelled",
+        "order_date": "2026-11-14T07:35:00.000Z",
+        "product_name": "বেগুন",
+        "buyer_name": "ফাহিম রহমান",
+        "farmer_name": "সালমা বেগম"
+      },
+      {
+        "order_id": 6,
+        "quantity": 4,
+        "total_price": 140,
+        "platform_fee": 14.0,
+        "farmer_amount": 126.0,
+        "status": "pending",
+        "order_date": "2026-11-13T14:02:00.000Z",
+        "product_name": "আলু",
+        "buyer_name": "ফাহিম রহমান",
+        "farmer_name": "করিম মিয়া"
+      },
+      {
+        "order_id": 20,
+        "quantity": 2,
+        "total_price": 440,
+        "platform_fee": 44.0,
+        "farmer_amount": 396.0,
+        "status": "confirmed",
+        "order_date": "2026-11-13T10:22:00.000Z",
+        "product_name": "আদা",
+        "buyer_name": "তাসনিম আক্তার",
+        "farmer_name": "করিম মিয়া"
+      },
+      {
+        "order_id": 32,
+        "quantity": 8,
+        "total_price": 360,
+        "platform_fee": 36.0,
+        "farmer_amount": 324.0,
+        "status": "confirmed",
+        "order_date": "2026-11-13T08:43:00.000Z",
+        "product_name": "পেঁপে",
+        "buyer_name": "মেহেদী হাসান",
+        "farmer_name": "সালমা বেগম"
+      },
+      {
+        "order_id": 17,
+        "quantity": 7,
+        "total_price": 350,
+        "platform_fee": 35.0,
+        "farmer_amount": 315.0,
+        "status": "confirmed",
+        "order_date": "2026-11-12T19:00:00.000Z",
+        "product_name": "বেগুন",
+        "buyer_name": "মেহেদী হাসান",
+        "farmer_name": "সালমা বেগম"
+      },
+      {
+        "order_id": 29,
+        "quantity": 12,
+        "total_price": 3600,
+        "platform_fee": 360.0,
+        "farmer_amount": 3240.0,
+        "status": "cancelled",
+        "order_date": "2026-11-12T17:11:00.000Z",
+        "product_name": "শুকনা মরিচ",
+        "buyer_name": "রাফি চৌধুরী",
+        "farmer_name": "রহিম উদ্দিন"
+      },
+      {
+        "order_id": 31,
+        "quantity": 15,
+        "total_price": 825,
+        "platform_fee": 82.5,
+        "farmer_amount": 742.5,
+        "status": "confirmed",
+        "order_date": "2026-11-12T03:56:00.000Z",
+        "product_name": "গম",
+        "buyer_name": "নুসরাত জাহান",
+        "farmer_name": "করিম মিয়া"
+      },
+      {
+        "order_id": 13,
+        "quantity": 16,
+        "total_price": 960,
+        "platform_fee": 96.0,
+        "farmer_amount": 864.0,
+        "status": "pending",
+        "order_date": "2026-11-11T08:59:00.000Z",
+        "product_name": "টমেটো",
+        "buyer_name": "মীম সুলতানা",
+        "farmer_name": "রহিম উদ্দিন"
+      },
+      {
+        "order_id": 8,
+        "quantity": 18,
+        "total_price": 1080,
+        "platform_fee": 108.0,
+        "farmer_amount": 972.0,
+        "status": "confirmed",
+        "order_date": "2026-11-11T08:47:00.000Z",
+        "product_name": "আনারস",
+        "buyer_name": "ফাহিম রহমান",
+        "farmer_name": "নাজমা খাতুন"
+      },
+      {
+        "order_id": 16,
+        "quantity": 2,
+        "total_price": 140,
+        "platform_fee": 14.0,
+        "farmer_amount": 126.0,
+        "status": "confirmed",
+        "order_date": "2026-11-10T22:13:00.000Z",
+        "product_name": "কলা (সাগর)",
+        "buyer_name": "মীম সুলতানা",
+        "farmer_name": "করিম মিয়া"
+      },
+      {
+        "order_id": 25,
+        "quantity": 3,
+        "total_price": 750,
+        "platform_fee": 75.0,
+        "farmer_amount": 675.0,
+        "status": "confirmed",
+        "order_date": "2026-11-10T20:35:00.000Z",
+        "product_name": "হলুদ",
+        "buyer_name": "সাকিব হাসান",
+        "farmer_name": "আব্দুল মালেক"
+      },
+      {
+        "order_id": 5,
+        "quantity": 14,
+        "total_price": 770,
+        "platform_fee": 77.0,
+        "farmer_amount": 693.0,
+        "status": "pending",
+        "order_date": "2026-11-09T09:42:00.000Z",
+        "product_name": "পটল",
+        "buyer_name": "তাসনিম আক্তার",
+        "farmer_name": "নাজমা খাতুন"
+      },
+      {
+        "order_id": 15,
+        "quantity": 20,
+        "total_price": 1400,
+        "platform_fee": 140.0,
+        "farmer_amount": 1260.0,
+        "status": "cancelled",
+        "order_date": "2026-11-09T06:27:00.000Z",
+        "product_name": "কলা (সাগর)",
+        "buyer_name": "মীম সুলতানা",
+        "farmer_name": "করিম মিয়া"
+      },
+      {
+        "order_id": 33,
+        "quantity": 8,
+        "total_price": 2560,
+        "platform_fee": 256.0,
+        "farmer_amount": 2304.0,
+        "status": "confirmed",
+        "order_date": "2026-11-09T00:24:00.000Z",
+        "product_name": "খেজুরের গুড়",
+        "buyer_name": "তানভীর আহমেদ",
+        "farmer_name": "জামাল হোসেন"
+      },
+      {
+        "order_id": 21,
+        "quantity": 6,
+        "total_price": 1200,
+        "platform_fee": 120.0,
+        "farmer_amount": 1080.0,
+        "status": "confirmed",
+        "order_date": "2026-11-06T17:44:00.000Z",
+        "product_name": "লিচু",
+        "buyer_name": "মেহেদী হাসান",
+        "farmer_name": "জামাল হোসেন"
+      },
+      {
+        "order_id": 28,
+        "quantity": 4,
+        "total_price": 1040,
+        "platform_fee": 104.0,
+        "farmer_amount": 936.0,
+        "status": "confirmed",
+        "order_date": "2026-11-06T12:18:00.000Z",
+        "product_name": "সরিষার তেল",
+        "buyer_name": "মীম সুলতানা",
+        "farmer_name": "আব্দুল মালেক"
+      },
+      {
+        "order_id": 30,
+        "quantity": 15,
+        "total_price": 675,
+        "platform_fee": 67.5,
+        "farmer_amount": 607.5,
+        "status": "pending",
+        "order_date": "2026-11-05T04:16:00.000Z",
+        "product_name": "পেঁপে",
+        "buyer_name": "রাফি চৌধুরী",
+        "farmer_name": "সালমা বেগম"
+      },
+      {
+        "order_id": 19,
+        "quantity": 11,
+        "total_price": 2420,
+        "platform_fee": 242.0,
+        "farmer_amount": 2178.0,
+        "status": "cancelled",
+        "order_date": "2026-11-04T17:07:00.000Z",
+        "product_name": "আদা",
+        "buyer_name": "ইসরাত জাহান",
+        "farmer_name": "করিম মিয়া"
+      },
+      {
+        "order_id": 12,
+        "quantity": 11,
+        "total_price": 495,
+        "platform_fee": 49.5,
+        "farmer_amount": 445.5,
+        "status": "pending",
+        "order_date": "2026-11-03T22:30:00.000Z",
+        "product_name": "ফুলকপি",
+        "buyer_name": "ইসরাত জাহান",
+        "farmer_name": "জামাল হোসেন"
+      },
+      {
+        "order_id": 1,
+        "quantity": 5,
+        "total_price": 3500,
+        "platform_fee": 350.0,
+        "farmer_amount": 3150.0,
+        "status": "confirmed",
+        "order_date": "2026-11-02T16:11:00.000Z",
+        "product_name": "খাঁটি মধু",
+        "buyer_name": "ইসরাত জাহান",
+        "farmer_name": "নাজমা খাতুন"
+      },
+      {
+        "order_id": 27,
+        "quantity": 16,
+        "total_price": 2080,
+        "platform_fee": 208.0,
+        "farmer_amount": 1872.0,
+        "status": "confirmed",
+        "order_date": "2026-10-31T04:43:00.000Z",
+        "product_name": "মসুর ডাল",
+        "buyer_name": "সাকিব হাসান",
+        "farmer_name": "সালমা বেগম"
+      },
+      {
+        "order_id": 18,
+        "quantity": 9,
+        "total_price": 1800,
+        "platform_fee": 180.0,
+        "farmer_amount": 1620.0,
+        "status": "confirmed",
+        "order_date": "2026-10-30T17:14:00.000Z",
+        "product_name": "লিচু",
+        "buyer_name": "মীম সুলতানা",
+        "farmer_name": "জামাল হোসেন"
+      },
+      {
+        "order_id": 7,
+        "quantity": 18,
+        "total_price": 2160,
+        "platform_fee": 216.0,
+        "farmer_amount": 1944.0,
+        "status": "pending",
+        "order_date": "2026-10-30T01:19:00.000Z",
+        "product_name": "আম (ল্যাংড়া)",
+        "buyer_name": "ইসরাত জাহান",
+        "farmer_name": "রহিম উদ্দিন"
+      },
+      {
+        "order_id": 3,
+        "quantity": 2,
+        "total_price": 140,
+        "platform_fee": 14.0,
+        "farmer_amount": 126.0,
+        "status": "pending",
+        "order_date": "2026-10-29T08:21:00.000Z",
+        "product_name": "কলা (সাগর)",
+        "buyer_name": "ফাহিম রহমান",
+        "farmer_name": "করিম মিয়া"
+      },
+      {
+        "order_id": 23,
+        "quantity": 15,
+        "total_price": 900,
+        "platform_fee": 90.0,
+        "farmer_amount": 810.0,
+        "status": "confirmed",
+        "order_date": "2026-10-29T08:07:00.000Z",
+        "product_name": "টমেটো",
+        "buyer_name": "ফাহিম রহমান",
+        "farmer_name": "রহিম উদ্দিন"
+      },
+      {
+        "order_id": 34,
+        "quantity": 15,
+        "total_price": 1800,
+        "platform_fee": 180.0,
+        "farmer_amount": 1620.0,
+        "status": "cancelled",
+        "order_date": "2026-10-29T05:43:00.000Z",
+        "product_name": "আম (ল্যাংড়া)",
+        "buyer_name": "তাসনিম আক্তার",
+        "farmer_name": "রহিম উদ্দিন"
+      },
+      {
+        "order_id": 10,
+        "quantity": 20,
+        "total_price": 5000,
+        "platform_fee": 500.0,
+        "farmer_amount": 4500.0,
+        "status": "confirmed",
+        "order_date": "2026-10-28T15:56:00.000Z",
+        "product_name": "হলুদ",
+        "buyer_name": "তানভীর আহমেদ",
+        "farmer_name": "আব্দুল মালেক"
+      },
+      {
+        "order_id": 14,
+        "quantity": 7,
+        "total_price": 420,
+        "platform_fee": 42.0,
+        "farmer_amount": 378.0,
+        "status": "confirmed",
+        "order_date": "2026-10-27T12:52:00.000Z",
+        "product_name": "টমেটো",
+        "buyer_name": "নুসরাত জাহান",
+        "farmer_name": "রহিম উদ্দিন"
+      },
+      {
+        "order_id": 24,
+        "quantity": 2,
+        "total_price": 110,
+        "platform_fee": 11.0,
+        "farmer_amount": 99.0,
+        "status": "confirmed",
+        "order_date": "2026-10-27T09:52:00.000Z",
+        "product_name": "পটল",
+        "buyer_name": "শাওন দাস",
+        "farmer_name": "নাজমা খাতুন"
+      },
+      {
+        "order_id": 4,
+        "quantity": 16,
+        "total_price": 2400,
+        "platform_fee": 240.0,
+        "farmer_amount": 2160.0,
+        "status": "pending",
+        "order_date": "2026-10-26T10:16:00.000Z",
+        "product_name": "সরিষা",
+        "buyer_name": "নুসরাত জাহান",
+        "farmer_name": "নাজমা খাতুন"
+      },
+      {
+        "order_id": 26,
+        "quantity": 7,
+        "total_price": 1540,
+        "platform_fee": 154.0,
+        "farmer_amount": 1386.0,
+        "status": "confirmed",
+        "order_date": "2026-10-26T03:12:00.000Z",
+        "product_name": "আদা",
+        "buyer_name": "ইসরাত জাহান",
+        "farmer_name": "করিম মিয়া"
+      },
+      {
+        "order_id": 2,
+        "quantity": 14,
+        "total_price": 4480,
+        "platform_fee": 448.0,
+        "farmer_amount": 4032.0,
+        "status": "confirmed",
+        "order_date": "2026-10-25T23:15:00.000Z",
+        "product_name": "খেজুরের গুড়",
+        "buyer_name": "রাফি চৌধুরী",
+        "farmer_name": "জামাল হোসেন"
+      },
+      {
+        "order_id": 9,
+        "quantity": 8,
+        "total_price": 440,
+        "platform_fee": 44.0,
+        "farmer_amount": 396.0,
+        "status": "confirmed",
+        "order_date": "2026-10-25T19:36:00.000Z",
+        "product_name": "গম",
+        "buyer_name": "নুসরাত জাহান",
+        "farmer_name": "করিম মিয়া"
+      },
+      {
+        "order_id": 22,
+        "quantity": 14,
+        "total_price": 560,
+        "platform_fee": 56.0,
+        "farmer_amount": 504.0,
+        "status": "confirmed",
+        "order_date": "2026-10-25T13:40:00.000Z",
+        "product_name": "লাউ",
+        "buyer_name": "ফাহিম রহমান",
+        "farmer_name": "আব্দুল মালেক"
+      }
+    ],
+    "GET /api/orders/stats": {
+      "total_farmers": 8,
+      "total_buyers": 10,
+      "total_products": 24,
+      "total_orders": 34,
+      "total_revenue": 46785,
+      "total_platform_income": 4678.5,
+      "total_farmer_earnings": 42106.5
+    },
+    "PUT /api/orders/confirm/:id": {
+      "success": {
+        "status": 200,
+        "body": {
+          "message": "✅ Order confirmed!"
+        }
+      },
+      "errors": [
+        {
+          "status": 403,
+          "body": {
+            "message": "❌ Not your order!"
+          }
+        }
+      ]
+    },
+    "PUT /api/orders/cancel/:id": {
+      "success": {
+        "status": 200,
+        "body": {
+          "message": "✅ Order cancelled!"
+        }
+      },
+      "errors": [
+        {
+          "status": 403,
+          "body": {
+            "message": "❌ Not your order!"
+          }
+        },
+        {
+          "status": 400,
+          "body": {
+            "message": "❌ Confirmed order cancel করা যাবে না!"
+          }
+        }
+      ]
+    },
+    "GET /api/admin/farmers": [
+      {
+        "user_id": 5,
+        "name": "জামাল হোসেন",
+        "email": "jamal.hossain@example.com",
+        "status": "approved",
+        "created_at": "2026-11-01T12:00:00.000Z"
+      },
+      {
+        "user_id": 8,
+        "name": "রুবেল আহমেদ",
+        "email": "rubel.ahmed@example.com",
+        "status": "pending",
+        "created_at": "2026-11-01T12:00:00.000Z"
+      },
+      {
+        "user_id": 6,
+        "name": "নাজমা খাতুন",
+        "email": "nazma.khatun@example.com",
+        "status": "approved",
+        "created_at": "2026-10-29T12:00:00.000Z"
+      },
+      {
+        "user_id": 2,
+        "name": "রহিম উদ্দিন",
+        "email": "rahim.uddin@example.com",
+        "status": "approved",
+        "created_at": "2026-10-27T12:00:00.000Z"
+      },
+      {
+        "user_id": 3,
+        "name": "করিম মিয়া",
+        "email": "karim.mia@example.com",
+        "status": "approved",
+        "created_at": "2026-10-27T12:00:00.000Z"
+      },
+      {
+        "user_id": 4,
+        "name": "সালমা বেগম",
+        "email": "salma.begum@example.com",
+        "status": "approved",
+        "created_at": "2026-10-20T12:00:00.000Z"
+      },
+      {
+        "user_id": 7,
+        "name": "আব্দুল মালেক",
+        "email": "abdul.malek@example.com",
+        "status": "approved",
+        "created_at": "2026-10-18T12:00:00.000Z"
+      },
+      {
+        "user_id": 9,
+        "name": "শিউলি আক্তার",
+        "email": "shiuli.akter@example.com",
+        "status": "pending",
+        "created_at": "2026-10-17T12:00:00.000Z"
+      }
+    ],
+    "PUT /api/admin/farmers/approve/:id": {
+      "success": {
+        "status": 200,
+        "body": {
+          "message": "✅ Farmer approved!"
+        }
+      },
+      "errors": [
+        {
+          "status": 404,
+          "body": {
+            "message": "❌ Farmer not found!"
+          }
+        }
+      ]
+    },
+    "DELETE /api/admin/farmers/delete/:id": {
+      "success": {
+        "status": 200,
+        "body": {
+          "message": "✅ Farmer deleted!"
+        }
+      },
+      "errors": [
+        {
+          "status": 404,
+          "body": {
+            "message": "❌ Farmer not found!"
+          }
+        }
+      ]
+    },
+    "GET /api/admin/products": [
+      {
+        "product_id": 5,
+        "name": "পটল",
+        "price": 55,
+        "quantity": 40,
+        "farmer_name": "নাজমা খাতুন",
+        "category_name": "সবজি"
+      },
+      {
+        "product_id": 8,
+        "name": "কলা (সাগর)",
+        "price": 70,
+        "quantity": 354,
+        "farmer_name": "করিম মিয়া",
+        "category_name": "ফল"
+      },
+      {
+        "product_id": 23,
+        "name": "খাঁটি মধু",
+        "price": 700,
+        "quantity": 322,
+        "farmer_name": "নাজমা খাতুন",
+        "category_name": "অন্যান্য"
+      },
+      {
+        "product_id": 15,
+        "name": "মসুর ডাল",
+        "price": 130,
+        "quantity": 55,
+        "farmer_name": "সালমা বেগম",
+        "category_name": "শস্য"
+      },
+      {
+        "product_id": 24,
+        "name": "সরিষার তেল",
+        "price": 260,
+        "quantity": 205,
+        "farmer_name": "আব্দুল মালেক",
+        "category_name": "অন্যান্য"
+      },
+      {
+        "product_id": 2,
+        "name": "আলু",
+        "price": 35,
+        "quantity": 91,
+        "farmer_name": "করিম মিয়া",
+        "category_name": "সবজি"
+      },
+      {
+        "product_id": 1,
+        "name": "টমেটো",
+        "price": 60,
+        "quantity": 366,
+        "farmer_name": "রহিম উদ্দিন",
+        "category_name": "সবজি"
+      },
+      {
+        "product_id": 4,
+        "name": "ফুলকপি",
+        "price": 45,
+        "quantity": 211,
+        "farmer_name": "জামাল হোসেন",
+        "category_name": "সবজি"
+      },
+      {
+        "product_id": 12,
+        "name": "পেয়ারা",
+        "price": 80,
+        "quantity": 53,
+        "farmer_name": "আব্দুল মালেক",
+        "category_name": "ফল"
+      },
+      {
+        "product_id": 10,
+        "name": "লিচু",
+        "price": 200,
+        "quantity": 185,
+        "farmer_name": "জামাল হোসেন",
+        "category_name": "ফল"
+      },
+      {
+        "product_id": 13,
+        "name": "চাল (মিনিকেট)",
+        "price": 70,
+        "quantity": 344,
+        "farmer_name": "রহিম উদ্দিন",
+        "category_name": "শস্য"
+      },
+      {
+        "product_id": 21,
+        "name": "রসুন",
+        "price": 180,
+        "quantity": 78,
+        "farmer_name": "সালমা বেগম",
+        "category_name": "মশলা"
+      },
+      {
+        "product_id": 18,
+        "name": "হলুদ",
+        "price": 250,
+        "quantity": 49,
+        "farmer_name": "আব্দুল মালেক",
+        "category_name": "মশলা"
+      },
+      {
+        "product_id": 7,
+        "name": "আম (ল্যাংড়া)",
+        "price": 120,
+        "quantity": 88,
+        "farmer_name": "রহিম উদ্দিন",
+        "category_name": "ফল"
+      },
+      {
+        "product_id": 14,
+        "name": "গম",
+        "price": 55,
+        "quantity": 335,
+        "farmer_name": "করিম মিয়া",
+        "category_name": "শস্য"
+      },
+      {
+        "product_id": 20,
+        "name": "আদা",
+        "price": 220,
+        "quantity": 462,
+        "farmer_name": "করিম মিয়া",
+        "category_name": "মশলা"
+      },
+      {
+        "product_id": 6,
+        "name": "লাউ",
+        "price": 40,
+        "quantity": 457,
+        "farmer_name": "আব্দুল মালেক",
+        "category_name": "সবজি"
+      },
+      {
+        "product_id": 16,
+        "name": "ভুট্টা",
+        "price": 40,
+        "quantity": 89,
+        "farmer_name": "জামাল হোসেন",
+        "category_name": "শস্য"
+      },
+      {
+        "product_id": 19,
+        "name": "শুকনা মরিচ",
+        "price": 300,
+        "quantity": 214,
+        "farmer_name": "রহিম উদ্দিন",
+        "category_name": "মশলা"
+      },
+      {
+        "product_id": 9,
+        "name": "পেঁপে",
+        "price": 45,
+        "quantity": 332,
+        "farmer_name": "সালমা বেগম",
+        "category_name": "ফল"
+      },
+      {
+        "product_id": 11,
+        "name": "আনারস",
+        "price": 60,
+        "quantity": 246,
+        "farmer_name": "নাজমা খাতুন",
+        "category_name": "ফল"
+      },
+      {
+        "product_id": 22,
+        "name": "খেজুরের গুড়",
+        "price": 320,
+        "quantity": 240,
+        "farmer_name": "জামাল হোসেন",
+        "category_name": "অন্যান্য"
+      },
+      {
+        "product_id": 17,
+        "name": "সরিষা",
+        "price": 150,
+        "quantity": 390,
+        "farmer_name": "নাজমা খাতুন",
+        "category_name": "শস্য"
+      },
+      {
+        "product_id": 3,
+        "name": "বেগুন",
+        "price": 50,
+        "quantity": 272,
+        "farmer_name": "সালমা বেগম",
+        "category_name": "সবজি"
+      }
+    ],
+    "DELETE /api/admin/products/delete/:id": {
+      "success": {
+        "status": 200,
+        "body": {
+          "message": "✅ Product deleted!"
+        }
+      },
+      "errors": [
+        {
+          "status": 404,
+          "body": {
+            "message": "❌ Product not found!"
+          }
+        }
+      ]
+    },
+    "GET /api/profile": {
+      "byUserId": {
+        "2": {
+          "user_id": 2,
+          "name": "রহিম উদ্দিন",
+          "email": "rahim.uddin@example.com",
+          "role": "farmer",
+          "status": "approved",
+          "created_at": "2026-10-27T12:00:00.000Z",
+          "total_products": 4,
+          "total_earnings": 9840,
+          "total_orders": 6,
+          "recent_products": [
+            {
+              "product_id": 1,
+              "name": "টমেটো",
+              "price": 60,
+              "quantity": 366,
+              "category_name": "সবজি"
+            },
+            {
+              "product_id": 13,
+              "name": "চাল (মিনিকেট)",
+              "price": 70,
+              "quantity": 344,
+              "category_name": "শস্য"
+            },
+            {
+              "product_id": 7,
+              "name": "আম (ল্যাংড়া)",
+              "price": 120,
+              "quantity": 88,
+              "category_name": "ফল"
+            },
+            {
+              "product_id": 19,
+              "name": "শুকনা মরিচ",
+              "price": 300,
+              "quantity": 214,
+              "category_name": "মশলা"
+            }
+          ]
+        },
+        "3": {
+          "user_id": 3,
+          "name": "করিম মিয়া",
+          "email": "karim.mia@example.com",
+          "role": "farmer",
+          "status": "approved",
+          "created_at": "2026-10-27T12:00:00.000Z",
+          "total_products": 4,
+          "total_earnings": 7485,
+          "total_orders": 9,
+          "recent_products": [
+            {
+              "product_id": 8,
+              "name": "কলা (সাগর)",
+              "price": 70,
+              "quantity": 354,
+              "category_name": "ফল"
+            },
+            {
+              "product_id": 2,
+              "name": "আলু",
+              "price": 35,
+              "quantity": 91,
+              "category_name": "সবজি"
+            },
+            {
+              "product_id": 14,
+              "name": "গম",
+              "price": 55,
+              "quantity": 335,
+              "category_name": "শস্য"
+            },
+            {
+              "product_id": 20,
+              "name": "আদা",
+              "price": 220,
+              "quantity": 462,
+              "category_name": "মশলা"
+            }
+          ]
+        },
+        "4": {
+          "user_id": 4,
+          "name": "সালমা বেগম",
+          "email": "salma.begum@example.com",
+          "role": "farmer",
+          "status": "approved",
+          "created_at": "2026-10-20T12:00:00.000Z",
+          "total_products": 4,
+          "total_earnings": 3715,
+          "total_orders": 5,
+          "recent_products": [
+            {
+              "product_id": 15,
+              "name": "মসুর ডাল",
+              "price": 130,
+              "quantity": 55,
+              "category_name": "শস্য"
+            },
+            {
+              "product_id": 21,
+              "name": "রসুন",
+              "price": 180,
+              "quantity": 78,
+              "category_name": "মশলা"
+            },
+            {
+              "product_id": 9,
+              "name": "পেঁপে",
+              "price": 45,
+              "quantity": 332,
+              "category_name": "ফল"
+            },
+            {
+              "product_id": 3,
+              "name": "বেগুন",
+              "price": 50,
+              "quantity": 272,
+              "category_name": "সবজি"
+            }
+          ]
+        },
+        "5": {
+          "user_id": 5,
+          "name": "জামাল হোসেন",
+          "email": "jamal.hossain@example.com",
+          "role": "farmer",
+          "status": "approved",
+          "created_at": "2026-11-01T12:00:00.000Z",
+          "total_products": 4,
+          "total_earnings": 10535,
+          "total_orders": 5,
+          "recent_products": [
+            {
+              "product_id": 4,
+              "name": "ফুলকপি",
+              "price": 45,
+              "quantity": 211,
+              "category_name": "সবজি"
+            },
+            {
+              "product_id": 10,
+              "name": "লিচু",
+              "price": 200,
+              "quantity": 185,
+              "category_name": "ফল"
+            },
+            {
+              "product_id": 16,
+              "name": "ভুট্টা",
+              "price": 40,
+              "quantity": 89,
+              "category_name": "শস্য"
+            },
+            {
+              "product_id": 22,
+              "name": "খেজুরের গুড়",
+              "price": 320,
+              "quantity": 240,
+              "category_name": "অন্যান্য"
+            }
+          ]
+        },
+        "6": {
+          "user_id": 6,
+          "name": "নাজমা খাতুন",
+          "email": "nazma.khatun@example.com",
+          "role": "farmer",
+          "status": "approved",
+          "created_at": "2026-10-29T12:00:00.000Z",
+          "total_products": 4,
+          "total_earnings": 7860,
+          "total_orders": 5,
+          "recent_products": [
+            {
+              "product_id": 5,
+              "name": "পটল",
+              "price": 55,
+              "quantity": 40,
+              "category_name": "সবজি"
+            },
+            {
+              "product_id": 23,
+              "name": "খাঁটি মধু",
+              "price": 700,
+              "quantity": 322,
+              "category_name": "অন্যান্য"
+            },
+            {
+              "product_id": 11,
+              "name": "আনারস",
+              "price": 60,
+              "quantity": 246,
+              "category_name": "ফল"
+            },
+            {
+              "product_id": 17,
+              "name": "সরিষা",
+              "price": 150,
+              "quantity": 390,
+              "category_name": "শস্য"
+            }
+          ]
+        },
+        "7": {
+          "user_id": 7,
+          "name": "আব্দুল মালেক",
+          "email": "abdul.malek@example.com",
+          "role": "farmer",
+          "status": "approved",
+          "created_at": "2026-10-18T12:00:00.000Z",
+          "total_products": 4,
+          "total_earnings": 7350,
+          "total_orders": 4,
+          "recent_products": [
+            {
+              "product_id": 24,
+              "name": "সরিষার তেল",
+              "price": 260,
+              "quantity": 205,
+              "category_name": "অন্যান্য"
+            },
+            {
+              "product_id": 12,
+              "name": "পেয়ারা",
+              "price": 80,
+              "quantity": 53,
+              "category_name": "ফল"
+            },
+            {
+              "product_id": 18,
+              "name": "হলুদ",
+              "price": 250,
+              "quantity": 49,
+              "category_name": "মশলা"
+            },
+            {
+              "product_id": 6,
+              "name": "লাউ",
+              "price": 40,
+              "quantity": 457,
+              "category_name": "সবজি"
+            }
+          ]
+        },
+        "10": {
+          "user_id": 10,
+          "name": "ফাহিম রহমান",
+          "email": "fahim.rahman@example.com",
+          "role": "buyer",
+          "created_at": "2026-11-07T12:00:00.000Z",
+          "total_orders": 6,
+          "total_spent": 3070,
+          "recent_orders": [
+            {
+              "order_id": 11,
+              "quantity": 5,
+              "total_price": 250,
+              "status": "cancelled",
+              "order_date": "2026-11-14T07:35:00.000Z",
+              "product_name": "বেগুন",
+              "farmer_name": "সালমা বেগম"
+            },
+            {
+              "order_id": 6,
+              "quantity": 4,
+              "total_price": 140,
+              "status": "pending",
+              "order_date": "2026-11-13T14:02:00.000Z",
+              "product_name": "আলু",
+              "farmer_name": "করিম মিয়া"
+            },
+            {
+              "order_id": 8,
+              "quantity": 18,
+              "total_price": 1080,
+              "status": "confirmed",
+              "order_date": "2026-11-11T08:47:00.000Z",
+              "product_name": "আনারস",
+              "farmer_name": "নাজমা খাতুন"
+            },
+            {
+              "order_id": 3,
+              "quantity": 2,
+              "total_price": 140,
+              "status": "pending",
+              "order_date": "2026-10-29T08:21:00.000Z",
+              "product_name": "কলা (সাগর)",
+              "farmer_name": "করিম মিয়া"
+            },
+            {
+              "order_id": 23,
+              "quantity": 15,
+              "total_price": 900,
+              "status": "confirmed",
+              "order_date": "2026-10-29T08:07:00.000Z",
+              "product_name": "টমেটো",
+              "farmer_name": "রহিম উদ্দিন"
+            }
+          ]
+        },
+        "11": {
+          "user_id": 11,
+          "name": "তানভীর আহমেদ",
+          "email": "tanvir.ahmed@example.com",
+          "role": "buyer",
+          "created_at": "2026-10-23T12:00:00.000Z",
+          "total_orders": 2,
+          "total_spent": 7560,
+          "recent_orders": [
+            {
+              "order_id": 33,
+              "quantity": 8,
+              "total_price": 2560,
+              "status": "confirmed",
+              "order_date": "2026-11-09T00:24:00.000Z",
+              "product_name": "খেজুরের গুড়",
+              "farmer_name": "জামাল হোসেন"
+            },
+            {
+              "order_id": 10,
+              "quantity": 20,
+              "total_price": 5000,
+              "status": "confirmed",
+              "order_date": "2026-10-28T15:56:00.000Z",
+              "product_name": "হলুদ",
+              "farmer_name": "আব্দুল মালেক"
+            }
+          ]
+        },
+        "12": {
+          "user_id": 12,
+          "name": "নুসরাত জাহান",
+          "email": "nusrat.jahan@example.com",
+          "role": "buyer",
+          "created_at": "2026-10-30T12:00:00.000Z",
+          "total_orders": 4,
+          "total_spent": 4085,
+          "recent_orders": [
+            {
+              "order_id": 31,
+              "quantity": 15,
+              "total_price": 825,
+              "status": "confirmed",
+              "order_date": "2026-11-12T03:56:00.000Z",
+              "product_name": "গম",
+              "farmer_name": "করিম মিয়া"
+            },
+            {
+              "order_id": 14,
+              "quantity": 7,
+              "total_price": 420,
+              "status": "confirmed",
+              "order_date": "2026-10-27T12:52:00.000Z",
+              "product_name": "টমেটো",
+              "farmer_name": "রহিম উদ্দিন"
+            },
+            {
+              "order_id": 4,
+              "quantity": 16,
+              "total_price": 2400,
+              "status": "pending",
+              "order_date": "2026-10-26T10:16:00.000Z",
+              "product_name": "সরিষা",
+              "farmer_name": "নাজমা খাতুন"
+            },
+            {
+              "order_id": 9,
+              "quantity": 8,
+              "total_price": 440,
+              "status": "confirmed",
+              "order_date": "2026-10-25T19:36:00.000Z",
+              "product_name": "গম",
+              "farmer_name": "করিম মিয়া"
+            }
+          ]
+        },
+        "13": {
+          "user_id": 13,
+          "name": "মেহেদী হাসান",
+          "email": "mehedi.hasan@example.com",
+          "role": "buyer",
+          "created_at": "2026-11-05T12:00:00.000Z",
+          "total_orders": 3,
+          "total_spent": 1910,
+          "recent_orders": [
+            {
+              "order_id": 32,
+              "quantity": 8,
+              "total_price": 360,
+              "status": "confirmed",
+              "order_date": "2026-11-13T08:43:00.000Z",
+              "product_name": "পেঁপে",
+              "farmer_name": "সালমা বেগম"
+            },
+            {
+              "order_id": 17,
+              "quantity": 7,
+              "total_price": 350,
+              "status": "confirmed",
+              "order_date": "2026-11-12T19:00:00.000Z",
+              "product_name": "বেগুন",
+              "farmer_name": "সালমা বেগম"
+            },
+            {
+              "order_id": 21,
+              "quantity": 6,
+              "total_price": 1200,
+              "status": "confirmed",
+              "order_date": "2026-11-06T17:44:00.000Z",
+              "product_name": "লিচু",
+              "farmer_name": "জামাল হোসেন"
+            }
+          ]
+        },
+        "14": {
+          "user_id": 14,
+          "name": "ইসরাত জাহান",
+          "email": "israt.jahan@example.com",
+          "role": "buyer",
+          "created_at": "2026-10-20T12:00:00.000Z",
+          "total_orders": 5,
+          "total_spent": 10115,
+          "recent_orders": [
+            {
+              "order_id": 19,
+              "quantity": 11,
+              "total_price": 2420,
+              "status": "cancelled",
+              "order_date": "2026-11-04T17:07:00.000Z",
+              "product_name": "আদা",
+              "farmer_name": "করিম মিয়া"
+            },
+            {
+              "order_id": 12,
+              "quantity": 11,
+              "total_price": 495,
+              "status": "pending",
+              "order_date": "2026-11-03T22:30:00.000Z",
+              "product_name": "ফুলকপি",
+              "farmer_name": "জামাল হোসেন"
+            },
+            {
+              "order_id": 1,
+              "quantity": 5,
+              "total_price": 3500,
+              "status": "confirmed",
+              "order_date": "2026-11-02T16:11:00.000Z",
+              "product_name": "খাঁটি মধু",
+              "farmer_name": "নাজমা খাতুন"
+            },
+            {
+              "order_id": 7,
+              "quantity": 18,
+              "total_price": 2160,
+              "status": "pending",
+              "order_date": "2026-10-30T01:19:00.000Z",
+              "product_name": "আম (ল্যাংড়া)",
+              "farmer_name": "রহিম উদ্দিন"
+            },
+            {
+              "order_id": 26,
+              "quantity": 7,
+              "total_price": 1540,
+              "status": "confirmed",
+              "order_date": "2026-10-26T03:12:00.000Z",
+              "product_name": "আদা",
+              "farmer_name": "করিম মিয়া"
+            }
+          ]
+        },
+        "15": {
+          "user_id": 15,
+          "name": "সাকিব হাসান",
+          "email": "sakib.hasan@example.com",
+          "role": "buyer",
+          "created_at": "2026-10-30T12:00:00.000Z",
+          "total_orders": 2,
+          "total_spent": 2830,
+          "recent_orders": [
+            {
+              "order_id": 25,
+              "quantity": 3,
+              "total_price": 750,
+              "status": "confirmed",
+              "order_date": "2026-11-10T20:35:00.000Z",
+              "product_name": "হলুদ",
+              "farmer_name": "আব্দুল মালেক"
+            },
+            {
+              "order_id": 27,
+              "quantity": 16,
+              "total_price": 2080,
+              "status": "confirmed",
+              "order_date": "2026-10-31T04:43:00.000Z",
+              "product_name": "মসুর ডাল",
+              "farmer_name": "সালমা বেগম"
+            }
+          ]
+        },
+        "16": {
+          "user_id": 16,
+          "name": "তাসনিম আক্তার",
+          "email": "tasnim.akter@example.com",
+          "role": "buyer",
+          "created_at": "2026-10-21T12:00:00.000Z",
+          "total_orders": 3,
+          "total_spent": 3010,
+          "recent_orders": [
+            {
+              "order_id": 20,
+              "quantity": 2,
+              "total_price": 440,
+              "status": "confirmed",
+              "order_date": "2026-11-13T10:22:00.000Z",
+              "product_name": "আদা",
+              "farmer_name": "করিম মিয়া"
+            },
+            {
+              "order_id": 5,
+              "quantity": 14,
+              "total_price": 770,
+              "status": "pending",
+              "order_date": "2026-11-09T09:42:00.000Z",
+              "product_name": "পটল",
+              "farmer_name": "নাজমা খাতুন"
+            },
+            {
+              "order_id": 34,
+              "quantity": 15,
+              "total_price": 1800,
+              "status": "cancelled",
+              "order_date": "2026-10-29T05:43:00.000Z",
+              "product_name": "আম (ল্যাংড়া)",
+              "farmer_name": "রহিম উদ্দিন"
+            }
+          ]
+        },
+        "17": {
+          "user_id": 17,
+          "name": "রাফি চৌধুরী",
+          "email": "rafi.chowdhury@example.com",
+          "role": "buyer",
+          "created_at": "2026-11-06T12:00:00.000Z",
+          "total_orders": 3,
+          "total_spent": 8755,
+          "recent_orders": [
+            {
+              "order_id": 29,
+              "quantity": 12,
+              "total_price": 3600,
+              "status": "cancelled",
+              "order_date": "2026-11-12T17:11:00.000Z",
+              "product_name": "শুকনা মরিচ",
+              "farmer_name": "রহিম উদ্দিন"
+            },
+            {
+              "order_id": 30,
+              "quantity": 15,
+              "total_price": 675,
+              "status": "pending",
+              "order_date": "2026-11-05T04:16:00.000Z",
+              "product_name": "পেঁপে",
+              "farmer_name": "সালমা বেগম"
+            },
+            {
+              "order_id": 2,
+              "quantity": 14,
+              "total_price": 4480,
+              "status": "confirmed",
+              "order_date": "2026-10-25T23:15:00.000Z",
+              "product_name": "খেজুরের গুড়",
+              "farmer_name": "জামাল হোসেন"
+            }
+          ]
+        },
+        "18": {
+          "user_id": 18,
+          "name": "মীম সুলতানা",
+          "email": "mim.sultana@example.com",
+          "role": "buyer",
+          "created_at": "2026-10-21T12:00:00.000Z",
+          "total_orders": 5,
+          "total_spent": 5340,
+          "recent_orders": [
+            {
+              "order_id": 13,
+              "quantity": 16,
+              "total_price": 960,
+              "status": "pending",
+              "order_date": "2026-11-11T08:59:00.000Z",
+              "product_name": "টমেটো",
+              "farmer_name": "রহিম উদ্দিন"
+            },
+            {
+              "order_id": 16,
+              "quantity": 2,
+              "total_price": 140,
+              "status": "confirmed",
+              "order_date": "2026-11-10T22:13:00.000Z",
+              "product_name": "কলা (সাগর)",
+              "farmer_name": "করিম মিয়া"
+            },
+            {
+              "order_id": 15,
+              "quantity": 20,
+              "total_price": 1400,
+              "status": "cancelled",
+              "order_date": "2026-11-09T06:27:00.000Z",
+              "product_name": "কলা (সাগর)",
+              "farmer_name": "করিম মিয়া"
+            },
+            {
+              "order_id": 28,
+              "quantity": 4,
+              "total_price": 1040,
+              "status": "confirmed",
+              "order_date": "2026-11-06T12:18:00.000Z",
+              "product_name": "সরিষার তেল",
+              "farmer_name": "আব্দুল মালেক"
+            },
+            {
+              "order_id": 18,
+              "quantity": 9,
+              "total_price": 1800,
+              "status": "confirmed",
+              "order_date": "2026-10-30T17:14:00.000Z",
+              "product_name": "লিচু",
+              "farmer_name": "জামাল হোসেন"
+            }
+          ]
+        },
+        "19": {
+          "user_id": 19,
+          "name": "শাওন দাস",
+          "email": "shaon.das@example.com",
+          "role": "buyer",
+          "created_at": "2026-11-12T12:00:00.000Z",
+          "total_orders": 1,
+          "total_spent": 110,
+          "recent_orders": [
+            {
+              "order_id": 24,
+              "quantity": 2,
+              "total_price": 110,
+              "status": "confirmed",
+              "order_date": "2026-10-27T09:52:00.000Z",
+              "product_name": "পটল",
+              "farmer_name": "নাজমা খাতুন"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

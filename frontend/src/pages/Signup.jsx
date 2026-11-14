@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import mockFetch from '../services/mockApi';
 
 const Signup = () => {
     const [name, setName] = useState('');
@@ -18,7 +19,7 @@ const Signup = () => {
         setLoading(true);
 
         try {
-            const res = await fetch('http://localhost:5000/api/auth/signup', {
+            const res = await mockFetch('http://localhost:5000/api/auth/signup', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, email, password, role })

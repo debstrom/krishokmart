@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useAuth } from '../context/AuthContext';
+import mockFetch from '../services/mockApi';
 
 const Profile = () => {
     const { user, token } = useAuth();
@@ -34,7 +35,7 @@ const Profile = () => {
     const fetchProfile = async () => {
         try {
             const currentToken = localStorage.getItem('token');
-            const res = await fetch('http://localhost:5000/api/profile', {
+            const res = await mockFetch('http://localhost:5000/api/profile', {
                 headers: { 'authorization': currentToken }
             });
             const data = await res.json();

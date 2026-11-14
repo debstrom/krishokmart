@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import ProductCard from '../components/ProductCard';
 import Footer from '../components/Footer';
+import mockFetch from '../services/mockApi';
 
 const Home = () => {
     const [products, setProducts] = useState([]);
@@ -14,7 +15,7 @@ const Home = () => {
         setLoading(true);
         try {
             let url = `http://localhost:5000/api/products/search?name=${search}&sort=${sort}&category_id=${category}`;
-            const res = await fetch(url);
+            const res = await mockFetch(url);
             const data = await res.json();
             setProducts(Array.isArray(data) ? data : []);
         } catch (err) {

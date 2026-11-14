@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import { useAuth } from '../context/AuthContext';
+import mockFetch from '../services/mockApi';
 
 const FarmerDashboard = () => {
     const { user, token } = useAuth();
@@ -32,7 +33,7 @@ const FarmerDashboard = () => {
     const fetchMyProducts = async () => {
         try {
             const currentToken = localStorage.getItem('token');
-            const res = await fetch('http://localhost:5000/api/products/my-products', {
+            const res = await mockFetch('http://localhost:5000/api/products/my-products', {
                 headers: { 'authorization': currentToken }
             });
             const data = await res.json();
@@ -46,7 +47,7 @@ const FarmerDashboard = () => {
     const fetchStats = async () => {
         try {
             const currentToken = localStorage.getItem('token');
-            const res = await fetch('http://localhost:5000/api/products/stats', {
+            const res = await mockFetch('http://localhost:5000/api/products/stats', {
                 headers: { 'authorization': currentToken }
             });
             const data = await res.json();
@@ -62,7 +63,7 @@ const FarmerDashboard = () => {
     const fetchFarmerOrders = async () => {
         try {
             const currentToken = localStorage.getItem('token');
-            const res = await fetch('http://localhost:5000/api/orders/farmer-orders', {
+            const res = await mockFetch('http://localhost:5000/api/orders/farmer-orders', {
                 headers: { 'authorization': currentToken }
             });
             const data = await res.json();
@@ -92,7 +93,7 @@ const FarmerDashboard = () => {
 
         try {
             const currentToken = localStorage.getItem('token');
-            const res = await fetch('http://localhost:5000/api/products/add', {
+            const res = await mockFetch('http://localhost:5000/api/products/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -133,7 +134,7 @@ const FarmerDashboard = () => {
         if (!window.confirm('আপনি কি এই product টি delete করতে চান?')) return;
 
         try {
-            const res = await fetch(`http://localhost:5000/api/products/delete/${productId}`, {
+            const res = await mockFetch(`http://localhost:5000/api/products/delete/${productId}`, {
                 method: 'DELETE',
                 headers: { 'authorization': token }
             });
@@ -150,7 +151,7 @@ const FarmerDashboard = () => {
     // Order Confirm
     const handleConfirmOrder = async (orderId) => {
         try {
-            const res = await fetch(`http://localhost:5000/api/orders/confirm/${orderId}`, {
+            const res = await mockFetch(`http://localhost:5000/api/orders/confirm/${orderId}`, {
                 method: 'PUT',
                 headers: { 'authorization': token }
             });

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import { useAuth } from '../context/AuthContext';
+import mockFetch from '../services/mockApi';
 
 const AdminPanel = () => {
     const { user, token } = useAuth();
@@ -24,7 +25,7 @@ const AdminPanel = () => {
     const fetchStats = async () => {
         try {
             const currentToken = localStorage.getItem('token');
-            const res = await fetch('http://localhost:5000/api/orders/stats', {
+            const res = await mockFetch('http://localhost:5000/api/orders/stats', {
                 headers: { 'authorization': currentToken }
             });
             const data = await res.json();
@@ -40,7 +41,7 @@ const AdminPanel = () => {
     const fetchFarmers = async () => {
         try {
             const currentToken = localStorage.getItem('token');
-            const res = await fetch('http://localhost:5000/api/admin/farmers', {
+            const res = await mockFetch('http://localhost:5000/api/admin/farmers', {
                 headers: { 'authorization': currentToken }
             });
             const data = await res.json();
@@ -54,7 +55,7 @@ const AdminPanel = () => {
     const fetchProducts = async () => {
         try {
             const currentToken = localStorage.getItem('token');
-            const res = await fetch('http://localhost:5000/api/admin/products', {
+            const res = await mockFetch('http://localhost:5000/api/admin/products', {
                 headers: { 'authorization': currentToken }
             });
             const data = await res.json();
@@ -76,7 +77,7 @@ const AdminPanel = () => {
     const handleApprove = async (farmerId) => {
         try {
             const currentToken = localStorage.getItem('token');
-            const res = await fetch(`http://localhost:5000/api/admin/farmers/approve/${farmerId}`, {
+            const res = await mockFetch(`http://localhost:5000/api/admin/farmers/approve/${farmerId}`, {
                 method: 'PUT',
                 headers: { 'authorization': currentToken }
             });
@@ -96,7 +97,7 @@ const AdminPanel = () => {
 
         try {
             const currentToken = localStorage.getItem('token');
-            const res = await fetch(`http://localhost:5000/api/admin/farmers/delete/${farmerId}`, {
+            const res = await mockFetch(`http://localhost:5000/api/admin/farmers/delete/${farmerId}`, {
                 method: 'DELETE',
                 headers: { 'authorization': currentToken }
             });
@@ -115,7 +116,7 @@ const AdminPanel = () => {
 
         try {
             const currentToken = localStorage.getItem('token');
-            const res = await fetch(`http://localhost:5000/api/admin/products/delete/${productId}`, {
+            const res = await mockFetch(`http://localhost:5000/api/admin/products/delete/${productId}`, {
                 method: 'DELETE',
                 headers: { 'authorization': currentToken }
             });

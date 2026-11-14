@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import ProductCard from '../components/ProductCard';
 import { useAuth } from '../context/AuthContext';
+import mockFetch from '../services/mockApi';
 
 const BuyerPage = () => {
     const { user, token } = useAuth();
@@ -29,7 +30,7 @@ const BuyerPage = () => {
     setLoading(true);
     try {
         let url = `http://localhost:5000/api/products/search?name=${search}&sort=${sort}&category_id=${category}`;
-        const res = await fetch(url);
+        const res = await mockFetch(url);
         const data = await res.json();
         setProducts(Array.isArray(data) ? data : []);
     } catch (err) {
@@ -44,7 +45,7 @@ const BuyerPage = () => {
     const fetchOrders = async () => {
     try {
         const currentToken = localStorage.getItem('token');
-        const res = await fetch('http://localhost:5000/api/orders/my-orders', {
+        const res = await mockFetch('http://localhost:5000/api/orders/my-orders', {
             headers: { 
                 'authorization': currentToken
             }
@@ -69,7 +70,7 @@ const BuyerPage = () => {
 
     try {
         const currentToken = localStorage.getItem('token');
-        const res = await fetch(`http://localhost:5000/api/orders/cancel/${orderId}`, {
+        const res = await mockFetch(`http://localhost:5000/api/orders/cancel/${orderId}`, {
             method: 'PUT',
             headers: { 'authorization': currentToken }
         });
@@ -105,7 +106,7 @@ const BuyerPage = () => {
 
     try {
         const currentToken = localStorage.getItem('token');
-        const res = await fetch('http://localhost:5000/api/orders/place', {
+        const res = await mockFetch('http://localhost:5000/api/orders/place', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
