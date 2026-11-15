@@ -58,7 +58,7 @@ npm run dev
 
 ### Default Admin Account:
 Email: admin@krishoknet.com <br>
-Password: admin123
+Password: admin1234
 
 ---
 
